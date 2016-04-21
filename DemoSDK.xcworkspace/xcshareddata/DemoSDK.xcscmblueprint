@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d4c78c8e-f139-b084-74e5-ce57b7db7bff++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d4c78c8e-f139-b084-74e5-ce57b7db7bff++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d4c78c8e-f139-b084-74e5-ce57b7db7bff++505" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0D1C1B07-E86A-4F77-AA0A-C11EDD9E3489",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d4c78c8e-f139-b084-74e5-ce57b7db7bff++505" : "Demo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DemoSDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DemoSDK.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sonhd92\/Demo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d4c78c8e-f139-b084-74e5-ce57b7db7bff++505"
+    }
+  ]
+}
