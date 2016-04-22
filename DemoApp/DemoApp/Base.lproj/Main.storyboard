@@ -32,10 +32,42 @@
                             <constraint firstItem="4Is-Yx-pPU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vvZ-i7-LvV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="TCu-y3-Dmx" kind="push" id="4t8-5y-nn1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405" y="367"/>
+            <point key="canvasLocation" x="281" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Q1-Ta-5nK">
+            <objects>
+                <viewController id="TCu-y3-Dmx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MWG-Ob-qsL"/>
+                        <viewControllerLayoutGuide type="bottom" id="wGs-Jo-JKD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4v8-Ge-B3w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WJ-zE-puz">
+                                <rect key="frame" x="261" y="285" width="78" height="30"/>
+                                <state key="normal" title="Show Shop"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1WJ-zE-puz" firstAttribute="centerX" secondItem="4v8-Ge-B3w" secondAttribute="centerX" id="SVa-Rd-QiJ"/>
+                            <constraint firstItem="1WJ-zE-puz" firstAttribute="centerY" secondItem="4v8-Ge-B3w" secondAttribute="centerY" id="h2f-Y6-rmR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fNH-6e-c06"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPc-ER-Kzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="360"/>
         </scene>
     </scenes>
 </document>
