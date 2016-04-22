@@ -6,9 +6,34 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		51F21A8C1CC9C45200B59460 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 51F21A8F1CC9C45200B59460 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				51F21A921CC9C46400B59460 /* ShellScript */,
+			);
+			dependencies = (
+				51F21A911CC9C46100B59460 /* PBXTargetDependency */,
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1C124D291CC8DF74009FAE81 /* DemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C124D281CC8DF74009FAE81 /* DemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51F21A901CC9C46100B59460 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C124D1C1CC8DF74009FAE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C124D241CC8DF74009FAE81;
+			remoteInfo = DemoKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1C124D251CC8DF74009FAE81 /* DemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +120,10 @@
 				TargetAttributes = {
 					1C124D241CC8DF74009FAE81 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 774JFRG4TN;
+					};
+					51F21A8C1CC9C45200B59460 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -111,6 +140,7 @@
 			projectRoot = "";
 			targets = (
 				1C124D241CC8DF74009FAE81 /* DemoKit */,
+				51F21A8C1CC9C45200B59460 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +155,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51F21A921CC9C46400B59460 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C124D201CC8DF74009FAE81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -134,6 +180,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51F21A911CC9C46100B59460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C124D241CC8DF74009FAE81 /* DemoKit */;
+			targetProxy = 51F21A901CC9C46100B59460 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1C124D2B1CC8DF74009FAE81 /* Debug */ = {
@@ -227,6 +281,8 @@
 		1C124D2E1CC8DF74009FAE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -236,6 +292,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.lizardtek.DemoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -243,6 +300,8 @@
 		1C124D2F1CC8DF74009FAE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -252,7 +311,24 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.lizardtek.DemoKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		51F21A8D1CC9C45200B59460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51F21A8E1CC9C45200B59460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -273,6 +349,15 @@
 			buildConfigurations = (
 				1C124D2E1CC8DF74009FAE81 /* Debug */,
 				1C124D2F1CC8DF74009FAE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51F21A8F1CC9C45200B59460 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F21A8D1CC9C45200B59460 /* Debug */,
+				51F21A8E1CC9C45200B59460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
