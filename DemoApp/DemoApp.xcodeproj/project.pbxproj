@@ -13,21 +13,15 @@
 		1C124D701CC8DFB5009FAE81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C124D6E1CC8DFB5009FAE81 /* Main.storyboard */; };
 		1C124D721CC8DFB5009FAE81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C124D711CC8DFB5009FAE81 /* Assets.xcassets */; };
 		1C124D751CC8DFB5009FAE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C124D731CC8DFB5009FAE81 /* LaunchScreen.storyboard */; };
-		516C6B7D1CC9D2DB00415890 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516C6B7C1CC9D2DB00415890 /* DemoKit.framework */; };
+		513CB89D1CCA0D60009B4360 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89B1CCA0D60009B4360 /* FBSDKCoreKit.framework */; };
+		513CB89E1CCA0D60009B4360 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */; };
+		513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89F1CCA0EB6009B4360 /* Bolts.framework */; };
+		513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A01CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework */; };
+		513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */; };
+		513CB8A71CCA0EB6009B4360 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 513CB8A21CCA0EB6009B4360 /* GoogleSignIn.bundle */; };
+		513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */; };
+		513CB8D31CCA1970009B4360 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8D21CCA1970009B4360 /* DemoKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		516C6B8B1CC9D43900415890 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C124D621CC8DFB5009FAE81 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +34,14 @@
 		1C124D711CC8DFB5009FAE81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C124D741CC8DFB5009FAE81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C124D761CC8DFB5009FAE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		516C6B7C1CC9D2DB00415890 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/DemoSDK-eayognqchhljsnhdcmodzgqepzzl/Build/Products/Debug-iphoneos/DemoKit.framework"; sourceTree = "<group>"; };
+		513CB89B1CCA0D60009B4360 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		513CB89F1CCA0EB6009B4360 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		513CB8A01CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		513CB8A21CCA0EB6009B4360 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		513CB8D21CCA1970009B4360 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/DemoSDK-fsmuhumxsbsayqatezocfocvqxzy/Build/Products/Debug-iphonesimulator/DemoKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +49,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516C6B7D1CC9D2DB00415890 /* DemoKit.framework in Frameworks */,
+				513CB8D31CCA1970009B4360 /* DemoKit.framework in Frameworks */,
+				513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */,
+				513CB89D1CCA0D60009B4360 /* FBSDKCoreKit.framework in Frameworks */,
+				513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */,
+				513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				513CB89E1CCA0D60009B4360 /* FBSDKLoginKit.framework in Frameworks */,
+				513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +65,8 @@
 		1C124D591CC8DFB5009FAE81 = {
 			isa = PBXGroup;
 			children = (
-				516C6B7C1CC9D2DB00415890 /* DemoKit.framework */,
+				513CB8D21CCA1970009B4360 /* DemoKit.framework */,
+				513CB89A1CCA0D47009B4360 /* Fameworks */,
 				1C124D641CC8DFB5009FAE81 /* DemoApp */,
 				1C124D631CC8DFB5009FAE81 /* Products */,
 			);
@@ -96,6 +104,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
+			isa = PBXGroup;
+			children = (
+				513CB89F1CCA0EB6009B4360 /* Bolts.framework */,
+				513CB8A01CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework */,
+				513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */,
+				513CB8A21CCA0EB6009B4360 /* GoogleSignIn.bundle */,
+				513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */,
+				513CB89B1CCA0D60009B4360 /* FBSDKCoreKit.framework */,
+				513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */,
+			);
+			path = Fameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,7 +128,6 @@
 				1C124D5E1CC8DFB5009FAE81 /* Sources */,
 				1C124D5F1CC8DFB5009FAE81 /* Frameworks */,
 				1C124D601CC8DFB5009FAE81 /* Resources */,
-				516C6B8B1CC9D43900415890 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513CB8A71CCA0EB6009B4360 /* GoogleSignIn.bundle in Resources */,
 				1C124D751CC8DFB5009FAE81 /* LaunchScreen.storyboard in Resources */,
 				1C124D721CC8DFB5009FAE81 /* Assets.xcassets in Resources */,
 				1C124D701CC8DFB5009FAE81 /* Main.storyboard in Resources */,
@@ -281,9 +303,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fameworks",
+				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.lizardtek.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = SDKInGameKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -292,9 +319,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fameworks",
+				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.lizardtek.DemoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = SDKInGameKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
