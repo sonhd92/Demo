@@ -2,7 +2,7 @@
 //  UIImage+Uni.h
 //  Medic
 //
-//  Created by Ngo Ba Thuong on 3/25/14.
+//  Created by KVip on 3/25/14.
 //  Copyright (c) 2014 NBT. All rights reserved.
 //
 

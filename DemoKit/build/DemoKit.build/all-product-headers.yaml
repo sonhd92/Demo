@@ -1,0 +1,38 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/nguyenquockhanh/Library/Developer/Xcode/DerivedData/DemoSDK-eayognqchhljsnhdcmodzgqepzzl/Build/Products/Debug-iphonesimulator/DemoKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DemoKit-Swift.h",
+          'external-contents': "/Users/nguyenquockhanh/Library/Developer/Xcode/DerivedData/DemoSDK-eayognqchhljsnhdcmodzgqepzzl/Build/Products/Debug-iphonesimulator/DemoKit.framework/Headers/DemoKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DemoKit.h",
+          'external-contents': "/Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/DemoKit/DemoKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "KLoginButton.h",
+          'external-contents': "/Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/ViewControllers/Login/KLoginButton.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/nguyenquockhanh/Library/Developer/Xcode/DerivedData/DemoSDK-eayognqchhljsnhdcmodzgqepzzl/Build/Products/Debug-iphonesimulator/DemoKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/build/DemoKit.build/Debug-iphonesimulator/DemoKit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
