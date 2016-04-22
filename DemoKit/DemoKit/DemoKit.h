@@ -9,4 +9,4 @@
 #import <UIKit/UIKit.h>
 // In this header, you should import all the public headers of your framework using statements like #import <DemoKit/PublicHeader.h>
 #import <DemoKit/KLoginButton.h>
-
+#import <DemoKit/KDemoDelegate.h>

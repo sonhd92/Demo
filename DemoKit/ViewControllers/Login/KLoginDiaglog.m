@@ -7,7 +7,8 @@
 //
 
 #import "KLoginDiaglog.h"
-
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 @interface KLoginDiaglog ()
 
 @end
