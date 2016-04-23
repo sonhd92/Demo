@@ -67,6 +67,12 @@
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:TOKEN];
     [[FBSDKLoginManager new] logOut];
     [self initLoginButton];
+    [self returnLogout];
+}
+- (void) returnLogout{
+    if (_delegate) {
+        [_delegate loginButtonDidLogOut:self];
+    }
 }
 #pragma mark LoginDialog Delegate
 -(void)LoginDialogWithResult:(KManagerResult *)result error:(NSError *)error{

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -24,6 +24,9 @@
                                     <constraint firstAttribute="width" constant="188" id="XTj-dE-Y9x"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6lo-Ym-h64"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

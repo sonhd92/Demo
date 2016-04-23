@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import <DemoKit/DemoKit.h>
+@interface ViewController ()<KLoginButtonDelegate>
 
 @end
 
@@ -19,9 +19,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark LogiNButton Delegate
+-(void)loginButtonDidLogOut:(KLoginButton *)loginButton{
+//    KLoginButton* a=loginButton;
 }
-
+-(void)loginButton:(KLoginButton *)loginButton didCompleteWithResult:(KManagerResult *)result error:(NSError *)error{
+//    KManagerResult*abc=result;
+}
 @end
