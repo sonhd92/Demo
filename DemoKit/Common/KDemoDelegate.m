@@ -8,6 +8,7 @@
 
 #import "KDemoDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 @implementation KDemoDelegate
 + (instancetype)sharedInstance{
     static KDemoDelegate * kdemo;
@@ -19,7 +20,7 @@
 }
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-    
+    [FBSDKLoginButton class];
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     return YES;
@@ -34,5 +35,4 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
                                                 sourceApplication:sourceApplication
                                                        annotation:annotation];
 }
-
 @end
