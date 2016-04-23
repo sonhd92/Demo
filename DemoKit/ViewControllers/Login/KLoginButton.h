@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @class KLoginButton;
-@class MTError;
 @class KManagerResult;
 @protocol KLoginButtonDelegate <NSObject>
 - (void)loginButton:(KLoginButton *)loginButton
 didCompleteWithResult:(KManagerResult *)result
-                error:(MTError *)error;
+                error:(NSError *)error;
 @end
 @interface KLoginButton : UIButton
 @property (weak, nonatomic) IBOutlet id<KLoginButtonDelegate> delegate;

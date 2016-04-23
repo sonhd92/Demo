@@ -9,7 +9,8 @@
 #import "KLoginButton.h"
 #import "AppCommon.h"
 #import "KLoginDiaglog.h"
-@interface KLoginButton()
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+@interface KLoginButton()<KLoginDiaglogDelegate>
 @end
 @implementation KLoginButton{
     UIViewController *_fromViewController;
@@ -21,6 +22,7 @@
     [self setTitle:@"Sign In" forState:UIControlStateNormal];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self initLoginButton];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(doLogout) name:Notification_Logout object:nil];
 }
 - (void)initLoginButton{
     _fromViewController=(UIViewController*)[self.superview nextResponder];
@@ -38,6 +40,7 @@
 - (void)onMoveLoginDialog{
     NSBundle *frameworkBundle = [NSBundle bundleForClass:[self class]];
     vc=[[KLoginDiaglog alloc] initWithNibName:@"KLoginDiaglog" bundle:frameworkBundle];
+    vc.delegate=self;
     UINavigationController* nav=[[UINavigationController alloc] initWithRootViewController:vc];
     nav.navigationBarHidden=YES;
     UIViewController *parentVC=(UIViewController*)[self.superview nextResponder];
@@ -61,6 +64,18 @@
     [_fromViewController presentViewController:alertController animated:YES completion:nil];
 }
 - (void)doLogout{
-    
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:TOKEN];
+    [[FBSDKLoginManager new] logOut];
+    [self initLoginButton];
+}
+#pragma mark LoginDialog Delegate
+-(void)LoginDialogWithResult:(KManagerResult *)result error:(NSError *)error{
+    [self initLoginButton];
+    [self returnResult:result error:error];
+}
+- (void)returnResult:(KManagerResult*)result error:(NSError*)err{
+    if (_delegate) {
+        [_delegate loginButton:self didCompleteWithResult:result error:err];
+    }
 }
 @end

@@ -11,7 +11,6 @@
 @interface KManagerResult : NSObject
 @property (nonatomic,strong) NSString *userName;
 @property (nonatomic,strong) NSString *userEmail;
-@property (nonatomic,strong) NSString *avatarImgLink;
 @property (nonatomic,strong) NSString *accessToken;
 
 + (instancetype)currentUser;

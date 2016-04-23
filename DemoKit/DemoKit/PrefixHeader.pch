@@ -10,7 +10,8 @@
 #define PrefixHeader_pch
 #import "UIColor+Uni.h"
 #import "UIImage+Uni.h"
-#import "MTError.h"
+#import "AppCommon.h"
 //Param
 #define TOKEN @"Token"
+#define Notification_Logout @"Notif_logout"
 #endif /* PrefixHeader_pch */
