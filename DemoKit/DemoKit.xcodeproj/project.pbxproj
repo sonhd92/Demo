@@ -39,8 +39,6 @@
 		516C6B711CC9CF1000415890 /* KLoginDiaglog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */; };
 		516C6BB51CC9E4AF00415890 /* KManagerResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6BA91CC9E4AF00415890 /* KManagerResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		516C6BB61CC9E4AF00415890 /* KManagerResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BAA1CC9E4AF00415890 /* KManagerResult.m */; };
-		516C6BB71CC9E4AF00415890 /* MTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6BAB1CC9E4AF00415890 /* MTError.h */; };
-		516C6BB81CC9E4AF00415890 /* MTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BAC1CC9E4AF00415890 /* MTError.m */; };
 		516C6BB91CC9E4AF00415890 /* UIColor+Uni.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6BAE1CC9E4AF00415890 /* UIColor+Uni.h */; };
 		516C6BBA1CC9E4AF00415890 /* UIColor+Uni.m in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BAF1CC9E4AF00415890 /* UIColor+Uni.m */; };
 		516C6BBB1CC9E4AF00415890 /* UIImage+Uni.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6BB01CC9E4AF00415890 /* UIImage+Uni.h */; };
@@ -48,6 +46,8 @@
 		516C6BBD1CC9E4AF00415890 /* AppCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6BB31CC9E4AF00415890 /* AppCommon.h */; };
 		516C6BBE1CC9E4AF00415890 /* AppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BB41CC9E4AF00415890 /* AppCommon.m */; };
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
+		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
+		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
 		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; };
 		54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */; };
 		54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
@@ -84,8 +84,6 @@
 		516C6B7B1CC9D14500415890 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		516C6BA91CC9E4AF00415890 /* KManagerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KManagerResult.h; sourceTree = "<group>"; };
 		516C6BAA1CC9E4AF00415890 /* KManagerResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KManagerResult.m; sourceTree = "<group>"; };
-		516C6BAB1CC9E4AF00415890 /* MTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTError.h; sourceTree = "<group>"; };
-		516C6BAC1CC9E4AF00415890 /* MTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTError.m; sourceTree = "<group>"; };
 		516C6BAE1CC9E4AF00415890 /* UIColor+Uni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Uni.h"; sourceTree = "<group>"; };
 		516C6BAF1CC9E4AF00415890 /* UIColor+Uni.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Uni.m"; sourceTree = "<group>"; };
 		516C6BB01CC9E4AF00415890 /* UIImage+Uni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Uni.h"; sourceTree = "<group>"; };
@@ -93,6 +91,8 @@
 		516C6BB31CC9E4AF00415890 /* AppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommon.h; sourceTree = "<group>"; };
 		516C6BB41CC9E4AF00415890 /* AppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommon.m; sourceTree = "<group>"; };
 		516C6BC01CC9E4D400415890 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_mini.png; sourceTree = "<group>"; };
+		51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_mini@2x.png"; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMiniShopViewController.xib; sourceTree = "<group>"; };
@@ -195,8 +195,6 @@
 			children = (
 				516C6BA91CC9E4AF00415890 /* KManagerResult.h */,
 				516C6BAA1CC9E4AF00415890 /* KManagerResult.m */,
-				516C6BAB1CC9E4AF00415890 /* MTError.h */,
-				516C6BAC1CC9E4AF00415890 /* MTError.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -226,6 +224,8 @@
 		516C6BBF1CC9E4BD00415890 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */,
+				51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */,
 				516C6BC01CC9E4D400415890 /* logo.png */,
 			);
 			path = Resources;
@@ -250,7 +250,6 @@
 			files = (
 				516C6B6F1CC9CF1000415890 /* KLoginDiaglog.h in Headers */,
 				516C6BB91CC9E4AF00415890 /* UIColor+Uni.h in Headers */,
-				516C6BB71CC9E4AF00415890 /* MTError.h in Headers */,
 				513CB8C81CCA1195009B4360 /* KDemoDelegate.h in Headers */,
 				516C6BBD1CC9E4AF00415890 /* AppCommon.h in Headers */,
 				54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */,
@@ -323,8 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */,
 				516C6BC11CC9E4D400415890 /* logo.png in Resources */,
 				513CB8C41CCA0EF9009B4360 /* GoogleSignIn.bundle in Resources */,
+				51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */,
 				54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */,
 				516C6B711CC9CF1000415890 /* KLoginDiaglog.xib in Resources */,
 			);
@@ -361,7 +362,6 @@
 				513CB8C91CCA1195009B4360 /* KDemoDelegate.m in Sources */,
 				54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */,
 				516C6BBE1CC9E4AF00415890 /* AppCommon.m in Sources */,
-				516C6BB81CC9E4AF00415890 /* MTError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
@@ -498,6 +499,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
