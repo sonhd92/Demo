@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol KMiniShopViewControllerDelegate <NSObject>
+
+
+@end
 @interface KMiniShopViewController : UIViewController
+@property (weak, nonatomic) IBOutlet id<KMiniShopViewControllerDelegate> delegate;
 
 @end

@@ -48,9 +48,11 @@
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
-		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; };
+		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */; };
 		54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
+		54FBC7281CCDB76300F10304 /* KMiniShopCustomButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7261CCDB76300F10304 /* KMiniShopCustomButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FBC7291CCDB76300F10304 /* KMiniShopCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7271CCDB76300F10304 /* KMiniShopCustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMiniShopViewController.xib; sourceTree = "<group>"; };
+		54FBC7261CCDB76300F10304 /* KMiniShopCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopCustomButton.h; sourceTree = "<group>"; };
+		54FBC7271CCDB76300F10304 /* KMiniShopCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopCustomButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,8 @@
 				54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */,
 				54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */,
 				54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */,
+				54FBC7261CCDB76300F10304 /* KMiniShopCustomButton.h */,
+				54FBC7271CCDB76300F10304 /* KMiniShopCustomButton.m */,
 			);
 			path = MiniShop;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				516C6B6A1CC9CEFA00415890 /* KLoginButton.h in Headers */,
 				1C124D291CC8DF74009FAE81 /* DemoKit.h in Headers */,
 				516C6BBB1CC9E4AF00415890 /* UIImage+Uni.h in Headers */,
+				54FBC7281CCDB76300F10304 /* KMiniShopCustomButton.h in Headers */,
 				516C6BB51CC9E4AF00415890 /* KManagerResult.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FBC7291CCDB76300F10304 /* KMiniShopCustomButton.m in Sources */,
 				516C6BBC1CC9E4AF00415890 /* UIImage+Uni.m in Sources */,
 				516C6BB61CC9E4AF00415890 /* KManagerResult.m in Sources */,
 				516C6BBA1CC9E4AF00415890 /* UIColor+Uni.m in Sources */,

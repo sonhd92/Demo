@@ -20,7 +20,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <color key="barTintColor" red="0.23688464566335077" green="0.70912313277836847" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
-                        <navigationItem title="Shop" id="GhC-9O-Vbl"/>
+                        <navigationItem title="Shop" id="GhC-9O-Vbl">
+                            <barButtonItem key="leftBarButtonItem" image="btn_close_mini.png" id="OAM-va-opH"/>
+                        </navigationItem>
                     </items>
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jp3-em-fLQ">
@@ -46,6 +48,10 @@
                 <constraint firstAttribute="trailing" secondItem="vef-rU-rNc" secondAttribute="trailing" id="u7L-WK-Pln"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="281" y="403"/>
         </view>
     </objects>
+    <resources>
+        <image name="btn_close_mini.png" width="17" height="17"/>
+    </resources>
 </document>

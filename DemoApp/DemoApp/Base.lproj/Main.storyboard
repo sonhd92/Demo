@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LrW-ZY-qlI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -35,6 +35,7 @@
                             <constraint firstItem="4Is-Yx-pPU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vvZ-i7-LvV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iHs-en-Wlc"/>
                     <connections>
                         <segue destination="TCu-y3-Dmx" kind="push" id="4t8-5y-nn1"/>
                     </connections>
@@ -43,10 +44,26 @@
             </objects>
             <point key="canvasLocation" x="281" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="raZ-Uq-llM">
+            <objects>
+                <navigationController id="LrW-ZY-qlI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pfO-Qq-fRO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jjy-7h-ELM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8p-aA-4vE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424" y="360"/>
+        </scene>
+        <!--Show Mini Shop View Controller-->
         <scene sceneID="4Q1-Ta-5nK">
             <objects>
-                <viewController id="TCu-y3-Dmx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="miniShop" id="TCu-y3-Dmx" customClass="ShowMiniShopViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MWG-Ob-qsL"/>
                         <viewControllerLayoutGuide type="bottom" id="wGs-Jo-JKD"/>
@@ -55,9 +72,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WJ-zE-puz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WJ-zE-puz" customClass="KMiniShopCustomButton">
                                 <rect key="frame" x="261" y="285" width="78" height="30"/>
                                 <state key="normal" title="Show Shop"/>
+                                <connections>
+                                    <action selector="showMiniShop:" destination="TCu-y3-Dmx" eventType="touchUpInside" id="ddi-ZZ-h5o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,6 +87,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fNH-6e-c06"/>
+                    <connections>
+                        <outlet property="showShopButton" destination="1WJ-zE-puz" id="cuc-EW-Kc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPc-ER-Kzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

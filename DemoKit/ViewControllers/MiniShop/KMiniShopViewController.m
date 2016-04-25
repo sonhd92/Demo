@@ -21,11 +21,10 @@
   [super viewDidLoad];
   self.shopItems =
       [NSArray arrayWithObjects:@"Remove Ads", @"100 Coin", @"1000 Coint", nil];
-}
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+  self.shopTableview.tableFooterView =
+      [[UIView alloc] initWithFrame:CGRectZero];
+  self.shopTableview.delaysContentTouches = NO;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -40,13 +39,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   NSString *identifier = @"cell";
+
   UITableViewCell *cell =
       [tableView dequeueReusableCellWithIdentifier:identifier];
   if (cell == nil) {
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                   reuseIdentifier:identifier];
   }
-    cell.textLabel.text = [self.shopItems objectAtIndex:indexPath.row];
+
+  cell.textLabel.text = [self.shopItems objectAtIndex:indexPath.row];
   return cell;
 }
+
+- (void)tableView:(UITableView *)tableView
+    didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+}
+
 @end

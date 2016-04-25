@@ -19,9 +19,27 @@
 		513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */; };
 		513CB8A71CCA0EB6009B4360 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 513CB8A21CCA0EB6009B4360 /* GoogleSignIn.bundle */; };
 		513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */; };
-		513CB8D31CCA1970009B4360 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8D21CCA1970009B4360 /* DemoKit.framework */; };
 		513CB8D71CCA3209009B4360 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */; };
+		54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */; };
+		54FBC72D1CCDCAE800F10304 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBC72C1CCDCAE800F10304 /* DemoKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54FBC7331CCDCC2300F10304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1C124D251CC8DF74009FAE81;
+			remoteInfo = DemoKit;
+		};
+		54FBC7351CCDCC2A00F10304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C124D241CC8DF74009FAE81;
+			remoteInfo = DemoKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1C124D621CC8DFB5009FAE81 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +59,10 @@
 		513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		513CB8A21CCA0EB6009B4360 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
-		513CB8D21CCA1970009B4360 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/DemoSDK-fsmuhumxsbsayqatezocfocvqxzy/Build/Products/Debug-iphonesimulator/DemoKit.framework"; sourceTree = "<group>"; };
+		54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMiniShopViewController.h; sourceTree = "<group>"; };
+		54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMiniShopViewController.m; sourceTree = "<group>"; };
+		54FBC72C1CCDCAE800F10304 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DemoSDK-epwwxmocugcrwuhbbggmyltigyem/Build/Products/Debug-iphonesimulator/DemoKit.framework"; sourceTree = "<group>"; };
+		54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoKit.xcodeproj; path = ../DemoKit/DemoKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				513CB8D31CCA1970009B4360 /* DemoKit.framework in Frameworks */,
 				513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */,
 				513CB8D71CCA3209009B4360 /* FBSDKLoginKit.framework in Frameworks */,
 				513CB89D1CCA0D60009B4360 /* FBSDKCoreKit.framework in Frameworks */,
 				513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */,
 				513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				54FBC72D1CCDCAE800F10304 /* DemoKit.framework in Frameworks */,
 				513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +86,7 @@
 		1C124D591CC8DFB5009FAE81 = {
 			isa = PBXGroup;
 			children = (
-				513CB8D21CCA1970009B4360 /* DemoKit.framework */,
+				54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */,
 				513CB89A1CCA0D47009B4360 /* Fameworks */,
 				1C124D641CC8DFB5009FAE81 /* DemoApp */,
 				1C124D631CC8DFB5009FAE81 /* Products */,
@@ -92,6 +113,8 @@
 				1C124D731CC8DFB5009FAE81 /* LaunchScreen.storyboard */,
 				1C124D761CC8DFB5009FAE81 /* Info.plist */,
 				1C124D651CC8DFB5009FAE81 /* Supporting Files */,
+				54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */,
+				54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -107,6 +130,7 @@
 		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54FBC72C1CCDCAE800F10304 /* DemoKit.framework */,
 				513CB89F1CCA0EB6009B4360 /* Bolts.framework */,
 				513CB8A01CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework */,
 				513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */,
@@ -116,6 +140,14 @@
 				513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */,
 			);
 			path = Fameworks;
+			sourceTree = "<group>";
+		};
+		54FBC72F1CCDCC2300F10304 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54FBC7341CCDCC2300F10304 /* DemoKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				54FBC7361CCDCC2A00F10304 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -163,12 +196,28 @@
 			mainGroup = 1C124D591CC8DFB5009FAE81;
 			productRefGroup = 1C124D631CC8DFB5009FAE81 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 54FBC72F1CCDCC2300F10304 /* Products */;
+					ProjectRef = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1C124D611CC8DFB5009FAE81 /* DemoApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		54FBC7341CCDCC2300F10304 /* DemoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DemoKit.framework;
+			remoteRef = 54FBC7331CCDCC2300F10304 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1C124D601CC8DFB5009FAE81 /* Resources */ = {
@@ -191,11 +240,20 @@
 			files = (
 				1C124D6D1CC8DFB5009FAE81 /* ViewController.m in Sources */,
 				1C124D6A1CC8DFB5009FAE81 /* AppDelegate.m in Sources */,
+				54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */,
 				1C124D671CC8DFB5009FAE81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54FBC7361CCDCC2A00F10304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DemoKit;
+			targetProxy = 54FBC7351CCDCC2A00F10304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1C124D6E1CC8DFB5009FAE81 /* Main.storyboard */ = {

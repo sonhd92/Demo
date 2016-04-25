@@ -1,2 +1,1 @@
-dependencies: \
-  /Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/ViewControllers/Common/UIImage+Uni.m
+dependencies: /Users/SonHD/Desktop/Git/DemoKit/Class/Uni/UIImage+Uni.m

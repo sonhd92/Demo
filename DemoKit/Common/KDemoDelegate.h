@@ -12,10 +12,14 @@
 + (instancetype)sharedInstance;
 
 - (BOOL)application:(UIApplication *)application
-didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
          annotation:(id)annotation;
+
++ (void)handlePushNotification:(NSDictionary *)notificationDictionary
+                   application:(UIApplication *)application;
+
 @end
