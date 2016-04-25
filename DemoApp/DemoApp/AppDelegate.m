@@ -10,6 +10,7 @@
 #import <DemoKit/DemoKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 @interface AppDelegate ()
 
 @end
@@ -19,12 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[KDemoDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    [GIDSignIn sharedInstance].clientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
     return YES;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [[KDemoDelegate sharedInstance] application:application
-                                               openURL:url
-                                     sourceApplication:sourceApplication
-                                            annotation:annotation];
+    
+     if ([[url scheme] isEqualToString:@"fb1112556342122786"]) {
+         return [[KDemoDelegate sharedInstance] application:application
+                                                    openURL:url
+                                          sourceApplication:sourceApplication
+                                                 annotation:annotation];
+     }else{
+         return [[GIDSignIn sharedInstance] handleURL:url
+                                    sourceApplication:sourceApplication
+                                           annotation:annotation];
+     }
 }
 @end
