@@ -23,20 +23,15 @@
     [GIDSignIn sharedInstance].clientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
     
     
-    NSString *currentVersion = [[UIDevice currentDevice] systemVersion];
-    if ([currentVersion compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending)
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
     {
-        UIRemoteNotificationType types =
-        UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert;
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:types];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
     }
     else
     {
-        UIUserNotificationType types =
-        UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
-        [[UIApplication sharedApplication] registerForRemoteNotifications];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+         (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
     }
     
     return YES;

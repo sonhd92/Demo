@@ -14,6 +14,7 @@
 				51F21A921CC9C46400B59460 /* ShellScript */,
 			);
 			dependencies = (
+				54F7C9901CCF2B6B00EE0B30 /* PBXTargetDependency */,
 				51F21A911CC9C46100B59460 /* PBXTargetDependency */,
 			);
 			name = Aggregate;
@@ -48,6 +49,15 @@
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		545CFF3C1CCF69E2001A5DAF /* DemoKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */; };
+		545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
+		545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */; };
+		54AFF6371CCF2D6A00F62E5F /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
+		54AFF6381CCF2D6B00F62E5F /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		54AFF6391CCF2D6D00F62E5F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
+		54AFF63A1CCF2D7200F62E5F /* btn_close_mini.png in Sources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
+		54AFF63B1CCF2D7300F62E5F /* btn_close_mini@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		54AFF63C1CCF2D7500F62E5F /* logo.png in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */; };
 		54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
@@ -62,6 +72,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1C124D241CC8DF74009FAE81;
 			remoteInfo = DemoKit;
+		};
+		54F7C98F1CCF2B6B00EE0B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C124D1C1CC8DF74009FAE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F7C9881CCF2AD100EE0B30;
+			remoteInfo = DemoKitBundle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -95,6 +112,8 @@
 		516C6BC01CC9E4D400415890 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_mini.png; sourceTree = "<group>"; };
 		51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_mini@2x.png"; sourceTree = "<group>"; };
+		54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F7C98B1CCF2AD100EE0B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMiniShopViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +135,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54F7C9861CCF2AD100EE0B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -128,6 +154,7 @@
 				516C6BB21CC9E4AF00415890 /* Common */,
 				516C6B661CC9CD5A00415890 /* ViewControllers */,
 				1C124D271CC8DF74009FAE81 /* DemoKit */,
+				54F7C98A1CCF2AD100EE0B30 /* DemoKitBundle */,
 				1C124D261CC8DF74009FAE81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1C124D251CC8DF74009FAE81 /* DemoKit.framework */,
+				54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,6 +263,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		54F7C98A1CCF2AD100EE0B30 /* DemoKitBundle */ = {
+			isa = PBXGroup;
+			children = (
+				54F7C98B1CCF2AD100EE0B30 /* Info.plist */,
+			);
+			path = DemoKitBundle;
+			sourceTree = "<group>";
+		};
 		54FBC7141CCA13C800F10304 /* MiniShop */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +314,7 @@
 				1C124D211CC8DF74009FAE81 /* Frameworks */,
 				1C124D221CC8DF74009FAE81 /* Headers */,
 				1C124D231CC8DF74009FAE81 /* Resources */,
+				545CFF401CCF6DB1001A5DAF /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -287,6 +324,23 @@
 			productName = DemoKit;
 			productReference = 1C124D251CC8DF74009FAE81 /* DemoKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F7C98E1CCF2AD100EE0B30 /* Build configuration list for PBXNativeTarget "DemoKitBundle" */;
+			buildPhases = (
+				54F7C9851CCF2AD100EE0B30 /* Sources */,
+				54F7C9861CCF2AD100EE0B30 /* Frameworks */,
+				54F7C9871CCF2AD100EE0B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoKitBundle;
+			productName = DemoKitBundle;
+			productReference = 54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -301,6 +355,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 					};
 					51F21A8C1CC9C45200B59460 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					54F7C9881CCF2AD100EE0B30 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -319,6 +376,7 @@
 			targets = (
 				1C124D241CC8DF74009FAE81 /* DemoKit */,
 				51F21A8C1CC9C45200B59460 /* Aggregate */,
+				54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -328,12 +386,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545CFF3C1CCF69E2001A5DAF /* DemoKitBundle.bundle in Resources */,
 				51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */,
 				516C6BC11CC9E4D400415890 /* logo.png in Resources */,
 				513CB8C41CCA0EF9009B4360 /* GoogleSignIn.bundle in Resources */,
 				51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */,
 				54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */,
 				516C6B711CC9CF1000415890 /* KLoginDiaglog.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F7C9871CCF2AD100EE0B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AFF6371CCF2D6A00F62E5F /* btn_close_mini.png in Resources */,
+				54AFF6381CCF2D6B00F62E5F /* btn_close_mini@2x.png in Resources */,
+				545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */,
+				545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */,
+				54AFF6391CCF2D6D00F62E5F /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +422,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n";
+		};
+		545CFF401CCF6DB1001A5DAF /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -372,6 +457,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54F7C9851CCF2AD100EE0B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AFF63A1CCF2D7200F62E5F /* btn_close_mini.png in Sources */,
+				54AFF63B1CCF2D7300F62E5F /* btn_close_mini@2x.png in Sources */,
+				54AFF63C1CCF2D7500F62E5F /* logo.png in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -379,6 +474,11 @@
 			isa = PBXTargetDependency;
 			target = 1C124D241CC8DF74009FAE81 /* DemoKit */;
 			targetProxy = 51F21A901CC9C46100B59460 /* PBXContainerItemProxy */;
+		};
+		54F7C9901CCF2B6B00EE0B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */;
+			targetProxy = 54F7C98F1CCF2B6B00EE0B30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -549,6 +649,44 @@
 			};
 			name = Release;
 		};
+		54F7C98C1CCF2AD100EE0B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DemoKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		54F7C98D1CCF2AD100EE0B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DemoKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +713,15 @@
 			buildConfigurations = (
 				51F21A8D1CC9C45200B59460 /* Debug */,
 				51F21A8E1CC9C45200B59460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F7C98E1CCF2AD100EE0B30 /* Build configuration list for PBXNativeTarget "DemoKitBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F7C98C1CCF2AD100EE0B30 /* Debug */,
+				54F7C98D1CCF2AD100EE0B30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
