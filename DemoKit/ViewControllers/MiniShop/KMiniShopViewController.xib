@@ -16,20 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vef-rU-rNc">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <color key="barTintColor" red="0.23688464566335077" green="0.70912313277836847" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <items>
-                        <navigationItem title="Shop" id="GhC-9O-Vbl">
-                            <barButtonItem key="leftBarButtonItem" image="btn_close_mini.png" id="OAM-va-opH"/>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jp3-em-fLQ">
-                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="524" id="XvE-Fb-wCK"/>
+                        <constraint firstAttribute="height" constant="568" id="XvE-Fb-wCK"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="8S2-1i-wVZ"/>
@@ -39,19 +30,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="vef-rU-rNc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Fn-0f-0xo"/>
-                <constraint firstItem="vef-rU-rNc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BJt-FM-tll"/>
+                <constraint firstItem="Jp3-em-fLQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3JS-yH-9dm"/>
                 <constraint firstItem="Jp3-em-fLQ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Of2-zo-fMl"/>
-                <constraint firstItem="Jp3-em-fLQ" firstAttribute="top" secondItem="vef-rU-rNc" secondAttribute="bottom" id="WIh-D9-9g0"/>
-                <constraint firstItem="vef-rU-rNc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eNV-Ix-5rN"/>
                 <constraint firstItem="Jp3-em-fLQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jcA-eo-HcL"/>
-                <constraint firstAttribute="trailing" secondItem="vef-rU-rNc" secondAttribute="trailing" id="u7L-WK-Pln"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="281" y="403"/>
         </view>
     </objects>
-    <resources>
-        <image name="btn_close_mini.png" width="17" height="17"/>
-    </resources>
 </document>
