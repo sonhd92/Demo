@@ -9,6 +9,7 @@
 #import "ShowMiniShopViewController.h"
 #import "ViewController.h"
 #import <DemoKit/DemoKit.h>
+
 @interface ViewController () <KLoginButtonDelegate>
 
 @property(strong, nonatomic) ShowMiniShopViewController *shopVC;

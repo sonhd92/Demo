@@ -24,7 +24,7 @@
 		51A9FD8A1CCDD29900FAF2F4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A9FD891CCDD29900FAF2F4 /* SystemConfiguration.framework */; };
 		51A9FD8C1CCDD29E00FAF2F4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A9FD8B1CCDD29E00FAF2F4 /* AddressBook.framework */; };
 		51A9FD8E1CCDD2A400FAF2F4 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A9FD8D1CCDD2A400FAF2F4 /* SafariServices.framework */; };
-		51A9FD941CCDD46700FAF2F4 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBC7341CCDCC2300F10304 /* DemoKit.framework */; };
+		54888A741CCF7C4B00C3C8A3 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBC7341CCDCC2300F10304 /* DemoKit.framework */; };
 		54F7C9961CCF2BFE00EE0B30 /* DemoKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9951CCF2BEE00EE0B30 /* DemoKitBundle.bundle */; };
 		54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */; };
 /* End PBXBuildFile section */
@@ -82,6 +82,7 @@
 		51A9FD891CCDD29900FAF2F4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		51A9FD8B1CCDD29E00FAF2F4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		51A9FD8D1CCDD2A400FAF2F4 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		54888A721CCF776300C3C8A3 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = ../../../DemoKit.framework; sourceTree = "<group>"; };
 		54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoKit.xcodeproj; path = ../DemoKit/DemoKit.xcodeproj; sourceTree = "<group>"; };
@@ -92,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51A9FD941CCDD46700FAF2F4 /* DemoKit.framework in Frameworks */,
+				54888A741CCF7C4B00C3C8A3 /* DemoKit.framework in Frameworks */,
 				51A9FD8E1CCDD2A400FAF2F4 /* SafariServices.framework in Frameworks */,
 				51A9FD8C1CCDD29E00FAF2F4 /* AddressBook.framework in Frameworks */,
 				51A9FD8A1CCDD29900FAF2F4 /* SystemConfiguration.framework in Frameworks */,
@@ -156,6 +157,7 @@
 		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54888A721CCF776300C3C8A3 /* DemoKit.framework */,
 				51A9FD8D1CCDD2A400FAF2F4 /* SafariServices.framework */,
 				51A9FD8B1CCDD29E00FAF2F4 /* AddressBook.framework */,
 				51A9FD891CCDD29900FAF2F4 /* SystemConfiguration.framework */,
@@ -345,6 +347,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Soha Company Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soha Company Limited";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -364,9 +367,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,6 +397,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Soha Company Limited";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Soha Company Limited";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -404,8 +411,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -456,6 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};

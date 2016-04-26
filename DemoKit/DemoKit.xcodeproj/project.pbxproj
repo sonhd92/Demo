@@ -49,7 +49,7 @@
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
-		545CFF3C1CCF69E2001A5DAF /* DemoKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */; };
+		545CFF3C1CCF69E2001A5DAF /* DemoKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */; };
 		545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
 		545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */; };
 		54AFF6371CCF2D6A00F62E5F /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
@@ -112,7 +112,7 @@
 		516C6BC01CC9E4D400415890 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_mini.png; sourceTree = "<group>"; };
 		51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_mini@2x.png"; sourceTree = "<group>"; };
-		54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7C98B1CCF2AD100EE0B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1C124D251CC8DF74009FAE81 /* DemoKit.framework */,
-				54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */,
+				54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 			);
 			name = DemoKitBundle;
 			productName = DemoKitBundle;
-			productReference = 54F7C9891CCF2AD100EE0B30 /* DemoKitBundle.bundle */;
+			productReference = 54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -386,7 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545CFF3C1CCF69E2001A5DAF /* DemoKitBundle.bundle in Resources */,
+				545CFF3C1CCF69E2001A5DAF /* DemoKit.bundle in Resources */,
 				51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */,
 				516C6BC11CC9E4D400415890 /* logo.png in Resources */,
 				513CB8C41CCA0EF9009B4360 /* GoogleSignIn.bundle in Resources */,
@@ -503,6 +503,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -522,8 +523,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -550,6 +553,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -563,7 +567,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -654,13 +660,13 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DemoKitBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DemoKit;
 				SDKROOT = iphoneos9.3;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -673,13 +679,13 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DemoKitBundle/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DemoKit;
 				SDKROOT = iphoneos9.3;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
