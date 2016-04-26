@@ -21,22 +21,23 @@
 		513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */; };
 		513CB8D71CCA3209009B4360 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */; };
 		54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */; };
-		54FBC72D1CCDCAE800F10304 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBC72C1CCDCAE800F10304 /* DemoKit.framework */; };
+		54FCB8591CCF0FF4004BFA23 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBC7341CCDCC2300F10304 /* DemoKit.framework */; };
+		54FCB85B1CCF11FC004BFA23 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FCB85A1CCF11FC004BFA23 /* DemoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		54FAB9A51CCF0A4C00A38350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 51F21A8C1CC9C45200B59460;
+			remoteInfo = Aggregate;
+		};
 		54FBC7331CCDCC2300F10304 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1C124D251CC8DF74009FAE81;
-			remoteInfo = DemoKit;
-		};
-		54FBC7351CCDCC2A00F10304 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C124D241CC8DF74009FAE81;
 			remoteInfo = DemoKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -61,8 +62,8 @@
 		513CB8A31CCA0EB6009B4360 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
 		54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMiniShopViewController.m; sourceTree = "<group>"; };
-		54FBC72C1CCDCAE800F10304 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DemoKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/DemoSDK-epwwxmocugcrwuhbbggmyltigyem/Build/Products/Debug-iphonesimulator/DemoKit.framework"; sourceTree = "<group>"; };
 		54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoKit.xcodeproj; path = ../DemoKit/DemoKit.xcodeproj; sourceTree = "<group>"; };
+		54FCB85A1CCF11FC004BFA23 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemoKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,12 +71,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FCB8591CCF0FF4004BFA23 /* DemoKit.framework in Frameworks */,
 				513CB8A81CCA0EB6009B4360 /* GoogleSignIn.framework in Frameworks */,
+				54FCB85B1CCF11FC004BFA23 /* DemoKit.framework in Frameworks */,
 				513CB8D71CCA3209009B4360 /* FBSDKLoginKit.framework in Frameworks */,
 				513CB89D1CCA0D60009B4360 /* FBSDKCoreKit.framework in Frameworks */,
 				513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */,
 				513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
-				54FBC72D1CCDCAE800F10304 /* DemoKit.framework in Frameworks */,
 				513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +132,7 @@
 		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54FBC72C1CCDCAE800F10304 /* DemoKit.framework */,
+				54FCB85A1CCF11FC004BFA23 /* DemoKit.framework */,
 				513CB89F1CCA0EB6009B4360 /* Bolts.framework */,
 				513CB8A01CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework */,
 				513CB8A11CCA0EB6009B4360 /* FBSDKShareKit.framework */,
@@ -164,7 +166,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				54FBC7361CCDCC2A00F10304 /* PBXTargetDependency */,
+				54FAB9A61CCF0A4C00A38350 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -182,6 +184,11 @@
 				TargetAttributes = {
 					1C124D611CC8DFB5009FAE81 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -248,10 +255,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		54FBC7361CCDCC2A00F10304 /* PBXTargetDependency */ = {
+		54FAB9A61CCF0A4C00A38350 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DemoKit;
-			targetProxy = 54FBC7351CCDCC2A00F10304 /* PBXContainerItemProxy */;
+			name = Aggregate;
+			targetProxy = 54FAB9A51CCF0A4C00A38350 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -292,6 +299,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "IPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -314,6 +322,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +345,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "IPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -351,6 +361,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -361,15 +372,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
 				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SDKInGameKit;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 			};
 			name = Debug;
 		};
@@ -377,15 +391,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
 				);
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SDKInGameKit;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 			};
 			name = Release;
 		};

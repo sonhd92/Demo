@@ -1,0 +1,6 @@
+framework module DemoKit {
+  umbrella header "DemoKit.h"
+
+  export *
+  module * { export * }
+}
