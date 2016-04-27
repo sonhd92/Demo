@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
+
 #import <DemoKit/DemoKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+#import "GAI.h"
 @interface AppDelegate ()
 
 @end
@@ -20,8 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[KDemoDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    [GIDSignIn sharedInstance].clientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
-    
+//    [GIDSignIn sharedInstance].clientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
+    [KDemoDelegate sharedInstance].googleClientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
+    [KDemoDelegate sharedInstance].googleTrackingID=@"UA-76944589-1";
     
     NSString *currentVersion = [[UIDevice currentDevice] systemVersion];
     if ([currentVersion compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending)
@@ -42,17 +45,10 @@
     return YES;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    
-     if ([[url scheme] isEqualToString:@"fb1112556342122786"]) {
          return [[KDemoDelegate sharedInstance] application:application
                                                     openURL:url
                                           sourceApplication:sourceApplication
                                                  annotation:annotation];
-     }else{
-         return [[GIDSignIn sharedInstance] handleURL:url
-                                    sourceApplication:sourceApplication
-                                           annotation:annotation];
-     }
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
