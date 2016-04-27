@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  DemoKit
+//
+//  Created by nguyenquockhanh on 4/22/16.
+//  Copyright © 2016 KVip. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "UIColor+Uni.h"
+#import "UIImage+Uni.h"
+#import "AppCommon.h"
+//Param
+#define TOKEN @"Token"
+#define Notification_Logout @"Notif_logout"
+#endif /* PrefixHeader_pch */

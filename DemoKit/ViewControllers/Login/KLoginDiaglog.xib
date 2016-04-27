@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KLoginDiaglog">
+            <connections>
+                <outlet property="btnLoginFacebook" destination="MZj-A3-69U" id="3eG-tA-Tud"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-x1-X0u">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izL-FF-r5K">
+                    <rect key="frame" x="20" y="85" width="280" height="310"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stH-z8-Pdf">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9c-4i-nYK">
+                                    <rect key="frame" x="63" y="5" width="154" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="154" id="see-6d-mhV"/>
+                                        <constraint firstAttribute="height" constant="35" id="udz-37-0zO"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7f-yM-eTd">
+                                    <rect key="frame" x="8" y="13" width="18" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="m7f-yM-eTd" secondAttribute="height" multiplier="1:1" id="ctF-ns-8bD"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="btn_close_mini.png"/>
+                                    <connections>
+                                        <action selector="doClose:" destination="-1" eventType="touchUpInside" id="BGR-Bd-N2T"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.23667694751175583" green="0.44296603893972308" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="m7f-yM-eTd" firstAttribute="leading" secondItem="stH-z8-Pdf" secondAttribute="leading" constant="8" id="UMV-0Z-b9p"/>
+                                <constraint firstItem="V9c-4i-nYK" firstAttribute="centerX" secondItem="stH-z8-Pdf" secondAttribute="centerX" id="VP7-NV-aNx"/>
+                                <constraint firstItem="V9c-4i-nYK" firstAttribute="centerY" secondItem="stH-z8-Pdf" secondAttribute="centerY" id="WjQ-pC-zba"/>
+                                <constraint firstItem="m7f-yM-eTd" firstAttribute="centerY" secondItem="stH-z8-Pdf" secondAttribute="centerY" id="aXZ-DJ-NP4"/>
+                                <constraint firstAttribute="height" constant="44" id="y62-Ru-T00"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="stH-z8-Pdf" firstAttribute="top" secondItem="izL-FF-r5K" secondAttribute="top" id="9TK-ho-ifs"/>
+                        <constraint firstAttribute="height" constant="310" id="Dml-SZ-WLI"/>
+                        <constraint firstItem="stH-z8-Pdf" firstAttribute="leading" secondItem="izL-FF-r5K" secondAttribute="leading" id="XUk-YT-F4A"/>
+                        <constraint firstAttribute="trailing" secondItem="stH-z8-Pdf" secondAttribute="trailing" id="dY1-cm-tMO"/>
+                        <constraint firstAttribute="width" constant="280" id="wLJ-xa-zTM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZj-A3-69U" customClass="FBSDKLoginButton">
+                    <rect key="frame" x="48" y="218" width="225" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="KLW-ce-ed9"/>
+                        <constraint firstAttribute="width" constant="225" id="Zm6-TX-tPm"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="UoM-Dz-vji"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Haf-cr-7dc" customClass="GIDSignInButton">
+                    <rect key="frame" x="48" y="283" width="225" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="heQ-jD-f0g"/>
+                        <constraint firstAttribute="width" constant="225" id="olR-Cl-Rs3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MyJ-x1-X0u" secondAttribute="bottom" id="2Yl-dF-Lw9"/>
+                <constraint firstItem="MyJ-x1-X0u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6fd-1t-bxm"/>
+                <constraint firstItem="Haf-cr-7dc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8qx-g9-dNj"/>
+                <constraint firstItem="izL-FF-r5K" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="G0A-PW-54v"/>
+                <constraint firstItem="MZj-A3-69U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GA1-Dn-eiV"/>
+                <constraint firstAttribute="trailing" secondItem="MyJ-x1-X0u" secondAttribute="trailing" id="GE3-xC-gxu"/>
+                <constraint firstItem="MyJ-x1-X0u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jhe-kJ-BTJ"/>
+                <constraint firstItem="izL-FF-r5K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ou7-S3-hWB"/>
+                <constraint firstItem="Haf-cr-7dc" firstAttribute="top" secondItem="MZj-A3-69U" secondAttribute="bottom" constant="21" id="pjy-ew-P63"/>
+                <constraint firstItem="MZj-A3-69U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rMf-lW-FOS"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_close_mini.png" width="17" height="17"/>
+        <image name="logo.png" width="198" height="45"/>
+    </resources>
+</document>
