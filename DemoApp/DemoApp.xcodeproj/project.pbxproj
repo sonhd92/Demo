@@ -42,6 +42,9 @@
 		51CADC581CD07C1C007372D3 /* DemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC521CD079A5007372D3 /* DemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51CADC851CD09C23007372D3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC841CD09C23007372D3 /* libz.tbd */; };
 		51CADC871CD09C52007372D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC861CD09C52007372D3 /* libsqlite3.tbd */; };
+		51CADC961CD09CFE007372D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC8B1CD09CFE007372D3 /* GoogleMobileAds.framework */; };
+		51CADC971CD09CFE007372D3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC931CD09CFE007372D3 /* libGoogleAnalyticsServices.a */; };
+		51CADC981CD09CFE007372D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC941CD09CFE007372D3 /* libsqlite3.tbd */; };
 		54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +123,15 @@
 		51CADC521CD079A5007372D3 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemoKit.framework; sourceTree = "<group>"; };
 		51CADC841CD09C23007372D3 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libz.tbd; sourceTree = "<group>"; };
 		51CADC861CD09C52007372D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libsqlite3.tbd; sourceTree = "<group>"; };
+		51CADC8B1CD09CFE007372D3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		51CADC8D1CD09CFE007372D3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		51CADC8E1CD09CFE007372D3 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		51CADC8F1CD09CFE007372D3 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		51CADC901CD09CFE007372D3 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		51CADC911CD09CFE007372D3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		51CADC921CD09CFE007372D3 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		51CADC931CD09CFE007372D3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		51CADC941CD09CFE007372D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libsqlite3.tbd; sourceTree = "<group>"; };
 		54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoKit.xcodeproj; path = ../DemoKit/DemoKit.xcodeproj; sourceTree = "<group>"; };
@@ -130,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CADC981CD09CFE007372D3 /* libsqlite3.tbd in Frameworks */,
 				51CADC3F1CD06033007372D3 /* MessageUI.framework in Frameworks */,
 				51CADC3D1CD06026007372D3 /* MediaPlayer.framework in Frameworks */,
 				51CADC3A1CD06016007372D3 /* EventKit.framework in Frameworks */,
@@ -138,6 +151,7 @@
 				51CADC371CD0600A007372D3 /* CoreTelephony.framework in Frameworks */,
 				51CADC351CD05E47007372D3 /* CoreMedia.framework in Frameworks */,
 				51CADC331CD05E40007372D3 /* CoreGraphics.framework in Frameworks */,
+				51CADC971CD09CFE007372D3 /* libGoogleAnalyticsServices.a in Frameworks */,
 				51CADC571CD07C1C007372D3 /* DemoKit.framework in Frameworks */,
 				51CADC541CD079BB007372D3 /* DemoKit.framework in Frameworks */,
 				51CADC311CD05E2F007372D3 /* AVFoundation.framework in Frameworks */,
@@ -156,6 +170,7 @@
 				513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */,
 				513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				51CADC851CD09C23007372D3 /* libz.tbd in Frameworks */,
+				51CADC961CD09CFE007372D3 /* GoogleMobileAds.framework in Frameworks */,
 				513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +225,9 @@
 		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51CADC8A1CD09CFE007372D3 /* GoogleAdmob */,
+				51CADC8C1CD09CFE007372D3 /* GoogleAnalytics */,
+				51CADC951CD09CFE007372D3 /* Library */,
 				51CADC841CD09C23007372D3 /* libz.tbd */,
 				51CADC521CD079A5007372D3 /* DemoKit.framework */,
 				51CADC281CD05DEB007372D3 /* GoogleAdmob */,
@@ -261,6 +279,36 @@
 				51CADC2A1CD05DF8007372D3 /* GoogleMobileAds.framework */,
 			);
 			path = GoogleAdmob;
+			sourceTree = "<group>";
+		};
+		51CADC8A1CD09CFE007372D3 /* GoogleAdmob */ = {
+			isa = PBXGroup;
+			children = (
+				51CADC8B1CD09CFE007372D3 /* GoogleMobileAds.framework */,
+			);
+			path = GoogleAdmob;
+			sourceTree = "<group>";
+		};
+		51CADC8C1CD09CFE007372D3 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				51CADC8D1CD09CFE007372D3 /* GAI.h */,
+				51CADC8E1CD09CFE007372D3 /* GAIDictionaryBuilder.h */,
+				51CADC8F1CD09CFE007372D3 /* GAIFields.h */,
+				51CADC901CD09CFE007372D3 /* GAILogger.h */,
+				51CADC911CD09CFE007372D3 /* GAITrackedViewController.h */,
+				51CADC921CD09CFE007372D3 /* GAITracker.h */,
+				51CADC931CD09CFE007372D3 /* libGoogleAnalyticsServices.a */,
+				51CADC941CD09CFE007372D3 /* libsqlite3.tbd */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		51CADC951CD09CFE007372D3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		54FBC72F1CCDCC2300F10304 /* Products */ = {
