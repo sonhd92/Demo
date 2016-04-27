@@ -9,22 +9,18 @@
 #import "ShowMiniShopViewController.h"
 #import "ViewController.h"
 #import <DemoKit/DemoKit.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
+
 @interface ViewController () <KLoginButtonDelegate>
 
 @property(strong, nonatomic) ShowMiniShopViewController *shopVC;
 
 @end
 
-@implementation ViewController{
-    GADBannerView* bannerView;
-}
+@implementation ViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-    CGPoint pAdmob=CGPointMake([UIScreen mainScreen].bounds.size.width/2-160, [UIScreen mainScreen].bounds.size.height-50);
-    //Google Admob
-    [KDemo showAdAtViewController:self position:pAdmob adUnitID:@"ca-app-pub-3940256099942544/2934735716"];
+  // Do any additional setup after loading the view, typically from a nib.
 }
 
 #pragma mark LogiNButton Delegate
@@ -38,4 +34,5 @@
       [self.storyboard instantiateViewControllerWithIdentifier:@"miniShop"];
   [self.navigationController pushViewController:self.shopVC animated:YES];
 }
+
 @end

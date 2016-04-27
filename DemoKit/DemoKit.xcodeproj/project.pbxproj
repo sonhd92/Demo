@@ -14,6 +14,7 @@
 				51F21A921CC9C46400B59460 /* ShellScript */,
 			);
 			dependencies = (
+				54F7C9901CCF2B6B00EE0B30 /* PBXTargetDependency */,
 				51F21A911CC9C46100B59460 /* PBXTargetDependency */,
 			);
 			name = Aggregate;
@@ -28,24 +29,10 @@
 		513CB8C11CCA0EF9009B4360 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8BA1CCA0EF9009B4360 /* FBSDKLoginKit.framework */; };
 		513CB8C21CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8BB1CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework */; };
 		513CB8C31CCA0EF9009B4360 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8BC1CCA0EF9009B4360 /* FBSDKShareKit.framework */; };
+		513CB8C41CCA0EF9009B4360 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 513CB8BD1CCA0EF9009B4360 /* GoogleSignIn.bundle */; };
+		513CB8C51CCA0EF9009B4360 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB8BE1CCA0EF9009B4360 /* GoogleSignIn.framework */; };
 		513CB8C81CCA1195009B4360 /* KDemoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 513CB8C61CCA1195009B4360 /* KDemoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		513CB8C91CCA1195009B4360 /* KDemoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 513CB8C71CCA1195009B4360 /* KDemoDelegate.m */; };
-		51698E031CCF74BD00424976 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E021CCF74BD00424976 /* CoreData.framework */; };
-		51698E051CCF74C500424976 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E041CCF74C500424976 /* libsqlite3.tbd */; };
-		51698E1E1CCF7E0300424976 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E161CCF7E0300424976 /* GAI.h */; };
-		51698E1F1CCF7E0300424976 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E171CCF7E0300424976 /* GAIDictionaryBuilder.h */; };
-		51698E201CCF7E0300424976 /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E181CCF7E0300424976 /* GAIFields.h */; };
-		51698E211CCF7E0300424976 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E191CCF7E0300424976 /* GAILogger.h */; };
-		51698E221CCF7E0300424976 /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E1A1CCF7E0300424976 /* GAITrackedViewController.h */; };
-		51698E231CCF7E0300424976 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 51698E1B1CCF7E0300424976 /* GAITracker.h */; };
-		51698E251CCF7E0300424976 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E1D1CCF7E0300424976 /* libGoogleAnalyticsServices.a */; };
-		5169F02C1CCF560A00818155 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5169F02A1CCF560A00818155 /* GoogleSignIn.bundle */; };
-		5169F02D1CCF560A00818155 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F02B1CCF560A00818155 /* GoogleSignIn.framework */; };
-		5169F02F1CCF561100818155 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F02E1CCF561100818155 /* libz.tbd */; };
-		5169F0311CCF56DC00818155 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0301CCF56DC00818155 /* AddressBook.framework */; };
-		5169F0331CCF56E000818155 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0321CCF56E000818155 /* SafariServices.framework */; };
-		5169F0351CCF56E900818155 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0341CCF56E900818155 /* StoreKit.framework */; };
-		5169F0371CCF56F200818155 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0361CCF56F200818155 /* SystemConfiguration.framework */; };
 		516C6B6A1CC9CEFA00415890 /* KLoginButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6B681CC9CEFA00415890 /* KLoginButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		516C6B6B1CC9CEFA00415890 /* KLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 516C6B691CC9CEFA00415890 /* KLoginButton.m */; };
 		516C6B6F1CC9CF1000415890 /* KLoginDiaglog.h in Headers */ = {isa = PBXBuildFile; fileRef = 516C6B6C1CC9CF1000415890 /* KLoginDiaglog.h */; };
@@ -62,11 +49,23 @@
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
-		51CADC421CD0605B007372D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC411CD0605B007372D3 /* GoogleMobileAds.framework */; };
-		51CADC451CD06102007372D3 /* KDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC431CD06102007372D3 /* KDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51CADC461CD06102007372D3 /* KDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CADC441CD06102007372D3 /* KDemo.m */; };
-		51CADC4A1CD061BC007372D3 /* GoogleAdmobManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC481CD061BC007372D3 /* GoogleAdmobManager.h */; };
-		51CADC4B1CD061BC007372D3 /* GoogleAdmobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CADC491CD061BC007372D3 /* GoogleAdmobManager.m */; };
+		51CADC7A1CD07FB0007372D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */; };
+		51CADC7B1CD07FB0007372D3 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC721CD07FB0007372D3 /* GAI.h */; };
+		51CADC7C1CD07FB0007372D3 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */; };
+		51CADC7D1CD07FB0007372D3 /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC741CD07FB0007372D3 /* GAIFields.h */; };
+		51CADC7E1CD07FB0007372D3 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC751CD07FB0007372D3 /* GAILogger.h */; };
+		51CADC7F1CD07FB0007372D3 /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */; };
+		51CADC801CD07FB0007372D3 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC771CD07FB0007372D3 /* GAITracker.h */; };
+		51CADC811CD07FB0007372D3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */; };
+		545CFF3C1CCF69E2001A5DAF /* DemoKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */; };
+		545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
+		545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */; };
+		54AFF6371CCF2D6A00F62E5F /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
+		54AFF6381CCF2D6B00F62E5F /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		54AFF6391CCF2D6D00F62E5F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
+		54AFF63A1CCF2D7200F62E5F /* btn_close_mini.png in Sources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
+		54AFF63B1CCF2D7300F62E5F /* btn_close_mini@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		54AFF63C1CCF2D7500F62E5F /* logo.png in Sources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */; };
 		54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
@@ -82,6 +81,13 @@
 			remoteGlobalIDString = 1C124D241CC8DF74009FAE81;
 			remoteInfo = DemoKit;
 		};
+		54F7C98F1CCF2B6B00EE0B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C124D1C1CC8DF74009FAE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F7C9881CCF2AD100EE0B30;
+			remoteInfo = DemoKitBundle;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -93,24 +99,10 @@
 		513CB8BA1CCA0EF9009B4360 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		513CB8BB1CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		513CB8BC1CCA0EF9009B4360 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		513CB8BD1CCA0EF9009B4360 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		513CB8BE1CCA0EF9009B4360 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
 		513CB8C61CCA1195009B4360 /* KDemoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDemoDelegate.h; sourceTree = "<group>"; };
 		513CB8C71CCA1195009B4360 /* KDemoDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDemoDelegate.m; sourceTree = "<group>"; };
-		51698E021CCF74BD00424976 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		51698E041CCF74C500424976 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		51698E161CCF7E0300424976 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		51698E171CCF7E0300424976 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		51698E181CCF7E0300424976 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		51698E191CCF7E0300424976 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		51698E1A1CCF7E0300424976 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		51698E1B1CCF7E0300424976 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		51698E1D1CCF7E0300424976 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		5169F02A1CCF560A00818155 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
-		5169F02B1CCF560A00818155 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
-		5169F02E1CCF561100818155 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		5169F0301CCF56DC00818155 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		5169F0321CCF56E000818155 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		5169F0341CCF56E900818155 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		5169F0361CCF56F200818155 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		516C6B681CC9CEFA00415890 /* KLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLoginButton.h; sourceTree = "<group>"; };
 		516C6B691CC9CEFA00415890 /* KLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLoginButton.m; sourceTree = "<group>"; };
 		516C6B6C1CC9CF1000415890 /* KLoginDiaglog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLoginDiaglog.h; sourceTree = "<group>"; };
@@ -128,11 +120,16 @@
 		516C6BC01CC9E4D400415890 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_mini.png; sourceTree = "<group>"; };
 		51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_mini@2x.png"; sourceTree = "<group>"; };
-		51CADC411CD0605B007372D3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		51CADC431CD06102007372D3 /* KDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDemo.h; sourceTree = "<group>"; };
-		51CADC441CD06102007372D3 /* KDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDemo.m; sourceTree = "<group>"; };
-		51CADC481CD061BC007372D3 /* GoogleAdmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAdmobManager.h; sourceTree = "<group>"; };
-		51CADC491CD061BC007372D3 /* GoogleAdmobManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAdmobManager.m; sourceTree = "<group>"; };
+		51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		51CADC721CD07FB0007372D3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		51CADC741CD07FB0007372D3 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		51CADC751CD07FB0007372D3 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		51CADC771CD07FB0007372D3 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F7C98B1CCF2AD100EE0B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMiniShopViewController.xib; sourceTree = "<group>"; };
@@ -145,21 +142,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51698E051CCF74C500424976 /* libsqlite3.tbd in Frameworks */,
-				51698E031CCF74BD00424976 /* CoreData.framework in Frameworks */,
-				5169F0371CCF56F200818155 /* SystemConfiguration.framework in Frameworks */,
-				5169F0351CCF56E900818155 /* StoreKit.framework in Frameworks */,
-				5169F0331CCF56E000818155 /* SafariServices.framework in Frameworks */,
-				5169F0311CCF56DC00818155 /* AddressBook.framework in Frameworks */,
-				5169F02F1CCF561100818155 /* libz.tbd in Frameworks */,
-				51698E251CCF7E0300424976 /* libGoogleAnalyticsServices.a in Frameworks */,
 				513CB8C21CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
-				5169F02D1CCF560A00818155 /* GoogleSignIn.framework in Frameworks */,
+				513CB8C51CCA0EF9009B4360 /* GoogleSignIn.framework in Frameworks */,
 				513CB8BF1CCA0EF9009B4360 /* Bolts.framework in Frameworks */,
+				51CADC811CD07FB0007372D3 /* libGoogleAnalyticsServices.a in Frameworks */,
 				513CB8C31CCA0EF9009B4360 /* FBSDKShareKit.framework in Frameworks */,
-				51CADC421CD0605B007372D3 /* GoogleMobileAds.framework in Frameworks */,
 				513CB8C01CCA0EF9009B4360 /* FBSDKCoreKit.framework in Frameworks */,
+				51CADC7A1CD07FB0007372D3 /* GoogleMobileAds.framework in Frameworks */,
 				513CB8C11CCA0EF9009B4360 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F7C9861CCF2AD100EE0B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +172,7 @@
 				516C6BB21CC9E4AF00415890 /* Common */,
 				516C6B661CC9CD5A00415890 /* ViewControllers */,
 				1C124D271CC8DF74009FAE81 /* DemoKit */,
+				54F7C98A1CCF2AD100EE0B30 /* DemoKitBundle */,
 				1C124D261CC8DF74009FAE81 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -183,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				1C124D251CC8DF74009FAE81 /* DemoKit.framework */,
+				54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,44 +199,23 @@
 		513CB8A91CCA0EBF009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51CADC401CD0605B007372D3 /* GoogleAdmob */,
-				51698E151CCF7E0300424976 /* GoogleAnalytics */,
-				5169F0361CCF56F200818155 /* SystemConfiguration.framework */,
-				5169F0341CCF56E900818155 /* StoreKit.framework */,
-				5169F0321CCF56E000818155 /* SafariServices.framework */,
-				5169F0301CCF56DC00818155 /* AddressBook.framework */,
-				5169F02E1CCF561100818155 /* libz.tbd */,
-				5169F02A1CCF560A00818155 /* GoogleSignIn.bundle */,
-				5169F02B1CCF560A00818155 /* GoogleSignIn.framework */,
+				51CADC6F1CD07FB0007372D3 /* GoogleAdmob */,
+				51CADC711CD07FB0007372D3 /* GoogleAnalytics */,
+				51CADC791CD07FB0007372D3 /* Library */,
 				513CB8B81CCA0EF9009B4360 /* Bolts.framework */,
 				513CB8B91CCA0EF9009B4360 /* FBSDKCoreKit.framework */,
 				513CB8BA1CCA0EF9009B4360 /* FBSDKLoginKit.framework */,
 				513CB8BB1CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework */,
 				513CB8BC1CCA0EF9009B4360 /* FBSDKShareKit.framework */,
+				513CB8BD1CCA0EF9009B4360 /* GoogleSignIn.bundle */,
+				513CB8BE1CCA0EF9009B4360 /* GoogleSignIn.framework */,
 			);
 			path = Fameworks;
-			sourceTree = "<group>";
-		};
-		51698E151CCF7E0300424976 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				51698E041CCF74C500424976 /* libsqlite3.tbd */,
-				51698E1D1CCF7E0300424976 /* libGoogleAnalyticsServices.a */,
-				51698E021CCF74BD00424976 /* CoreData.framework */,
-				51698E161CCF7E0300424976 /* GAI.h */,
-				51698E171CCF7E0300424976 /* GAIDictionaryBuilder.h */,
-				51698E181CCF7E0300424976 /* GAIFields.h */,
-				51698E191CCF7E0300424976 /* GAILogger.h */,
-				51698E1A1CCF7E0300424976 /* GAITrackedViewController.h */,
-				51698E1B1CCF7E0300424976 /* GAITracker.h */,
-			);
-			path = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
 		516C6B661CC9CD5A00415890 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				51CADC471CD06195007372D3 /* GoogleAdMob */,
 				54FBC7141CCA13C800F10304 /* MiniShop */,
 				516C6B671CC9CD8400415890 /* Login */,
 			);
@@ -292,8 +270,6 @@
 				516C6BB41CC9E4AF00415890 /* AppCommon.m */,
 				513CB8C61CCA1195009B4360 /* KDemoDelegate.h */,
 				513CB8C71CCA1195009B4360 /* KDemoDelegate.m */,
-				51CADC431CD06102007372D3 /* KDemo.h */,
-				51CADC441CD06102007372D3 /* KDemo.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -308,21 +284,41 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		51CADC401CD0605B007372D3 /* GoogleAdmob */ = {
+		51CADC6F1CD07FB0007372D3 /* GoogleAdmob */ = {
 			isa = PBXGroup;
 			children = (
-				51CADC411CD0605B007372D3 /* GoogleMobileAds.framework */,
+				51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */,
 			);
 			path = GoogleAdmob;
 			sourceTree = "<group>";
 		};
-		51CADC471CD06195007372D3 /* GoogleAdMob */ = {
+		51CADC711CD07FB0007372D3 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				51CADC481CD061BC007372D3 /* GoogleAdmobManager.h */,
-				51CADC491CD061BC007372D3 /* GoogleAdmobManager.m */,
+				51CADC721CD07FB0007372D3 /* GAI.h */,
+				51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */,
+				51CADC741CD07FB0007372D3 /* GAIFields.h */,
+				51CADC751CD07FB0007372D3 /* GAILogger.h */,
+				51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */,
+				51CADC771CD07FB0007372D3 /* GAITracker.h */,
+				51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */,
 			);
-			path = GoogleAdMob;
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		51CADC791CD07FB0007372D3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		54F7C98A1CCF2AD100EE0B30 /* DemoKitBundle */ = {
+			isa = PBXGroup;
+			children = (
+				54F7C98B1CCF2AD100EE0B30 /* Info.plist */,
+			);
+			path = DemoKitBundle;
 			sourceTree = "<group>";
 		};
 		54FBC7141CCA13C800F10304 /* MiniShop */ = {
@@ -344,24 +340,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51698E1E1CCF7E0300424976 /* GAI.h in Headers */,
+				51CADC7B1CD07FB0007372D3 /* GAI.h in Headers */,
 				516C6B6F1CC9CF1000415890 /* KLoginDiaglog.h in Headers */,
 				516C6BB91CC9E4AF00415890 /* UIColor+Uni.h in Headers */,
 				513CB8C81CCA1195009B4360 /* KDemoDelegate.h in Headers */,
-				51698E201CCF7E0300424976 /* GAIFields.h in Headers */,
+				51CADC7D1CD07FB0007372D3 /* GAIFields.h in Headers */,
 				516C6BBD1CC9E4AF00415890 /* AppCommon.h in Headers */,
 				54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */,
-				51698E1F1CCF7E0300424976 /* GAIDictionaryBuilder.h in Headers */,
-				51698E211CCF7E0300424976 /* GAILogger.h in Headers */,
+				51CADC7C1CD07FB0007372D3 /* GAIDictionaryBuilder.h in Headers */,
+				51CADC7E1CD07FB0007372D3 /* GAILogger.h in Headers */,
 				516C6B6A1CC9CEFA00415890 /* KLoginButton.h in Headers */,
 				1C124D291CC8DF74009FAE81 /* DemoKit.h in Headers */,
-				51CADC451CD06102007372D3 /* KDemo.h in Headers */,
 				516C6BBB1CC9E4AF00415890 /* UIImage+Uni.h in Headers */,
 				54FBC7281CCDB76300F10304 /* KMiniShopCustomButton.h in Headers */,
 				516C6BB51CC9E4AF00415890 /* KManagerResult.h in Headers */,
-				51CADC4A1CD061BC007372D3 /* GoogleAdmobManager.h in Headers */,
-				51698E221CCF7E0300424976 /* GAITrackedViewController.h in Headers */,
-				51698E231CCF7E0300424976 /* GAITracker.h in Headers */,
+				51CADC7F1CD07FB0007372D3 /* GAITrackedViewController.h in Headers */,
+				51CADC801CD07FB0007372D3 /* GAITracker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +370,7 @@
 				1C124D211CC8DF74009FAE81 /* Frameworks */,
 				1C124D221CC8DF74009FAE81 /* Headers */,
 				1C124D231CC8DF74009FAE81 /* Resources */,
+				545CFF401CCF6DB1001A5DAF /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -385,6 +380,23 @@
 			productName = DemoKit;
 			productReference = 1C124D251CC8DF74009FAE81 /* DemoKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F7C98E1CCF2AD100EE0B30 /* Build configuration list for PBXNativeTarget "DemoKitBundle" */;
+			buildPhases = (
+				54F7C9851CCF2AD100EE0B30 /* Sources */,
+				54F7C9861CCF2AD100EE0B30 /* Frameworks */,
+				54F7C9871CCF2AD100EE0B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoKitBundle;
+			productName = DemoKitBundle;
+			productReference = 54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -399,6 +411,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 					};
 					51F21A8C1CC9C45200B59460 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					54F7C9881CCF2AD100EE0B30 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -417,6 +432,7 @@
 			targets = (
 				1C124D241CC8DF74009FAE81 /* DemoKit */,
 				51F21A8C1CC9C45200B59460 /* Aggregate */,
+				54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -426,12 +442,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545CFF3C1CCF69E2001A5DAF /* DemoKit.bundle in Resources */,
 				51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */,
 				516C6BC11CC9E4D400415890 /* logo.png in Resources */,
+				513CB8C41CCA0EF9009B4360 /* GoogleSignIn.bundle in Resources */,
 				51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */,
 				54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */,
-				5169F02C1CCF560A00818155 /* GoogleSignIn.bundle in Resources */,
 				516C6B711CC9CF1000415890 /* KLoginDiaglog.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F7C9871CCF2AD100EE0B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AFF6371CCF2D6A00F62E5F /* btn_close_mini.png in Resources */,
+				54AFF6381CCF2D6B00F62E5F /* btn_close_mini@2x.png in Resources */,
+				545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */,
+				545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */,
+				54AFF6391CCF2D6D00F62E5F /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +478,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator -arch x86_64 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"";
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/${FRAMEWORK_VERSION}/${SF_TARGET_NAME}\"\n";
+		};
+		545CFF401CCF6DB1001A5DAF /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n\n# Link the \"Current\" version to \"${FRAMEWORK_VERSION}\"\nln -sfh ${FRAMEWORK_VERSION} \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\nln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\ncp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/${FRAMEWORK_VERSION}/Headers\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -458,17 +501,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51CADC4B1CD061BC007372D3 /* GoogleAdmobManager.m in Sources */,
 				54FBC7291CCDB76300F10304 /* KMiniShopCustomButton.m in Sources */,
 				516C6BBC1CC9E4AF00415890 /* UIImage+Uni.m in Sources */,
 				516C6BB61CC9E4AF00415890 /* KManagerResult.m in Sources */,
 				516C6BBA1CC9E4AF00415890 /* UIColor+Uni.m in Sources */,
 				516C6B6B1CC9CEFA00415890 /* KLoginButton.m in Sources */,
 				516C6B701CC9CF1000415890 /* KLoginDiaglog.m in Sources */,
-				51CADC461CD06102007372D3 /* KDemo.m in Sources */,
 				513CB8C91CCA1195009B4360 /* KDemoDelegate.m in Sources */,
 				54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */,
 				516C6BBE1CC9E4AF00415890 /* AppCommon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F7C9851CCF2AD100EE0B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AFF63A1CCF2D7200F62E5F /* btn_close_mini.png in Sources */,
+				54AFF63B1CCF2D7300F62E5F /* btn_close_mini@2x.png in Sources */,
+				54AFF63C1CCF2D7500F62E5F /* logo.png in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +530,11 @@
 			isa = PBXTargetDependency;
 			target = 1C124D241CC8DF74009FAE81 /* DemoKit */;
 			targetProxy = 51F21A901CC9C46100B59460 /* PBXContainerItemProxy */;
+		};
+		54F7C9901CCF2B6B00EE0B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F7C9881CCF2AD100EE0B30 /* DemoKitBundle */;
+			targetProxy = 54F7C98F1CCF2B6B00EE0B30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -503,6 +559,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -522,8 +579,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -550,6 +609,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -563,7 +623,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = "\"$(PROJECT_NAME)Headers\"";
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -574,9 +636,9 @@
 		1C124D2E1CC8DF74009FAE81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nguyen Quang (U49RAA8HW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nguyen Quang (U49RAA8HW3)";
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -594,12 +656,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Fameworks/Library",
 					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "dd5b0e04-7f2b-4adc-8f57-71b7eb7cea92";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -607,9 +668,9 @@
 		1C124D2F1CC8DF74009FAE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nguyen Quang (U49RAA8HW3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nguyen Quang (U49RAA8HW3)";
-				DEFINES_MODULE = NO;
+				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -627,12 +688,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Fameworks/Library",
 					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "dd5b0e04-7f2b-4adc-8f57-71b7eb7cea92";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -658,6 +718,44 @@
 				GCC_PREFIX_HEADER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dd5b0e04-7f2b-4adc-8f57-71b7eb7cea92";
+			};
+			name = Release;
+		};
+		54F7C98C1CCF2AD100EE0B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DemoKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
+				PRODUCT_NAME = DemoKit;
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		54F7C98D1CCF2AD100EE0B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DemoKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SohaGame.DemoKitBundle;
+				PRODUCT_NAME = DemoKit;
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -687,6 +785,15 @@
 			buildConfigurations = (
 				51F21A8D1CC9C45200B59460 /* Debug */,
 				51F21A8E1CC9C45200B59460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F7C98E1CCF2AD100EE0B30 /* Build configuration list for PBXNativeTarget "DemoKitBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F7C98C1CCF2AD100EE0B30 /* Debug */,
+				54F7C98D1CCF2AD100EE0B30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
