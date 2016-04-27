@@ -15,4 +15,8 @@
 + (void)setToken:(id)token{
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:TOKEN];
 }
++ (NSString*)getDeviceID{
+    NSUUID *oNSUUID = [[UIDevice currentDevice] identifierForVendor];
+    return [oNSUUID UUIDString];
+}
 @end

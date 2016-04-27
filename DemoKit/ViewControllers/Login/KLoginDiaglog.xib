@@ -75,16 +75,26 @@
                         <outlet property="delegate" destination="-1" id="UoM-Dz-vji"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Haf-cr-7dc" customClass="GIDSignInButton">
+                    <rect key="frame" x="48" y="283" width="225" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="heQ-jD-f0g"/>
+                        <constraint firstAttribute="width" constant="225" id="olR-Cl-Rs3"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="MyJ-x1-X0u" secondAttribute="bottom" id="2Yl-dF-Lw9"/>
                 <constraint firstItem="MyJ-x1-X0u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6fd-1t-bxm"/>
+                <constraint firstItem="Haf-cr-7dc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8qx-g9-dNj"/>
                 <constraint firstItem="izL-FF-r5K" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="G0A-PW-54v"/>
                 <constraint firstItem="MZj-A3-69U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="GA1-Dn-eiV"/>
                 <constraint firstAttribute="trailing" secondItem="MyJ-x1-X0u" secondAttribute="trailing" id="GE3-xC-gxu"/>
                 <constraint firstItem="MyJ-x1-X0u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jhe-kJ-BTJ"/>
                 <constraint firstItem="izL-FF-r5K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ou7-S3-hWB"/>
+                <constraint firstItem="Haf-cr-7dc" firstAttribute="top" secondItem="MZj-A3-69U" secondAttribute="bottom" constant="21" id="pjy-ew-P63"/>
                 <constraint firstItem="MZj-A3-69U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rMf-lW-FOS"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>

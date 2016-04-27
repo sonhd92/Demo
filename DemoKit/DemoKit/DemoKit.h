@@ -11,4 +11,5 @@
 // using statements like #import <DemoKit/PublicHeader.h>
 #import <DemoKit/KDemoDelegate.h>
 #import <DemoKit/KLoginButton.h>
+#import <DemoKit/KDemo.h>
 #import <DemoKit/KMiniShopCustomButton.h>

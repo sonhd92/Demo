@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>GoogleSignIn.bundle/GTMOAuth2ViewTouch.nib</key>
-		<data>
-		8KDL0Jw38ScBu9uDuHjnoIoj6v0=
-		</data>
 		<key>GoogleSignIn.bundle/Info.plist</key>
 		<data>
-		MxK+ZKVAxsJBVbVgs3BFoRwN8QQ=
+		1nopJjlEyPCS8nnd8ka7dyxLjkE=
 		</data>
 		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
 		<data>
@@ -370,23 +366,23 @@
 		</dict>
 		<key>Headers/GIDAuthentication.h</key>
 		<data>
-		A7gkL8ToevPVLbn7maKUj8AdnW4=
+		t1cwrtJLzzprZjsMlo9e/MJewqI=
 		</data>
 		<key>Headers/GIDGoogleUser.h</key>
 		<data>
-		1JuDNRiyjEqUSV+JWksVBCo+oIk=
+		fHWWdvNlSV+Jx4Nf0XPa6BXXCfs=
 		</data>
 		<key>Headers/GIDProfileData.h</key>
 		<data>
-		OX9XoyVCa5+abEBUJuoc6dqsEA0=
+		fAPfby28LMHgDf5WOI3Cm5qIJPI=
 		</data>
 		<key>Headers/GIDSignIn.h</key>
 		<data>
-		7zZaiaArhvVgKWMS7Im6x3isf6I=
+		6Et0KEbhBRFprv5h2WxxAuXZuTg=
 		</data>
 		<key>Headers/GIDSignInButton.h</key>
 		<data>
-		7Us4nlLdo0Zn9iQA2Hx3z1xhndY=
+		Z28ALXn6Re97q8UeC+Tp27JZB/g=
 		</data>
 		<key>Headers/GoogleSignIn.h</key>
 		<data>
@@ -394,22 +390,18 @@
 		</data>
 		<key>Headers/UIViewController+SignIn.h</key>
 		<data>
-		PUyzlnViaTWhq+fJ3qYgypzlDxM=
+		1NK4fxrG6WN2McfA//SBlfuHkC8=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		5m1D9j1mCeTJ9qEPUc6KflMq1sM=
+		PxDp454M86lRyLFk2MIzYTIcWxQ=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>GoogleSignIn.bundle/GTMOAuth2ViewTouch.nib</key>
-		<data>
-		8KDL0Jw38ScBu9uDuHjnoIoj6v0=
-		</data>
 		<key>GoogleSignIn.bundle/Info.plist</key>
 		<data>
-		MxK+ZKVAxsJBVbVgs3BFoRwN8QQ=
+		1nopJjlEyPCS8nnd8ka7dyxLjkE=
 		</data>
 		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
 		<data>
@@ -769,23 +761,23 @@
 		</dict>
 		<key>Headers/GIDAuthentication.h</key>
 		<data>
-		A7gkL8ToevPVLbn7maKUj8AdnW4=
+		t1cwrtJLzzprZjsMlo9e/MJewqI=
 		</data>
 		<key>Headers/GIDGoogleUser.h</key>
 		<data>
-		1JuDNRiyjEqUSV+JWksVBCo+oIk=
+		fHWWdvNlSV+Jx4Nf0XPa6BXXCfs=
 		</data>
 		<key>Headers/GIDProfileData.h</key>
 		<data>
-		OX9XoyVCa5+abEBUJuoc6dqsEA0=
+		fAPfby28LMHgDf5WOI3Cm5qIJPI=
 		</data>
 		<key>Headers/GIDSignIn.h</key>
 		<data>
-		7zZaiaArhvVgKWMS7Im6x3isf6I=
+		6Et0KEbhBRFprv5h2WxxAuXZuTg=
 		</data>
 		<key>Headers/GIDSignInButton.h</key>
 		<data>
-		7Us4nlLdo0Zn9iQA2Hx3z1xhndY=
+		Z28ALXn6Re97q8UeC+Tp27JZB/g=
 		</data>
 		<key>Headers/GoogleSignIn.h</key>
 		<data>
@@ -793,11 +785,11 @@
 		</data>
 		<key>Headers/UIViewController+SignIn.h</key>
 		<data>
-		PUyzlnViaTWhq+fJ3qYgypzlDxM=
+		1NK4fxrG6WN2McfA//SBlfuHkC8=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		5m1D9j1mCeTJ9qEPUc6KflMq1sM=
+		PxDp454M86lRyLFk2MIzYTIcWxQ=
 		</data>
 	</dict>
 	<key>rules</key>

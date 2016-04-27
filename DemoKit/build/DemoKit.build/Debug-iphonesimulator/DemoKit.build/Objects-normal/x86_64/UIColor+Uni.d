@@ -1,1 +1,2 @@
-dependencies: /Users/SonHD/Desktop/Git/DemoKit/Class/Uni/UIColor+Uni.m
+dependencies: \
+  /Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/Class/Uni/UIColor+Uni.m
