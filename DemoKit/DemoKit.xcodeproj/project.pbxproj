@@ -49,6 +49,14 @@
 		516C6BC11CC9E4D400415890 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C6BC01CC9E4D400415890 /* logo.png */; };
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
+		51CADC7A1CD07FB0007372D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */; };
+		51CADC7B1CD07FB0007372D3 /* GAI.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC721CD07FB0007372D3 /* GAI.h */; };
+		51CADC7C1CD07FB0007372D3 /* GAIDictionaryBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */; };
+		51CADC7D1CD07FB0007372D3 /* GAIFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC741CD07FB0007372D3 /* GAIFields.h */; };
+		51CADC7E1CD07FB0007372D3 /* GAILogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC751CD07FB0007372D3 /* GAILogger.h */; };
+		51CADC7F1CD07FB0007372D3 /* GAITrackedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */; };
+		51CADC801CD07FB0007372D3 /* GAITracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC771CD07FB0007372D3 /* GAITracker.h */; };
+		51CADC811CD07FB0007372D3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */; };
 		545CFF3C1CCF69E2001A5DAF /* DemoKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */; };
 		545CFF3E1CCF6D72001A5DAF /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
 		545CFF3F1CCF6D78001A5DAF /* KLoginDiaglog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */; };
@@ -112,6 +120,14 @@
 		516C6BC01CC9E4D400415890 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_mini.png; sourceTree = "<group>"; };
 		51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_close_mini@2x.png"; sourceTree = "<group>"; };
+		51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		51CADC721CD07FB0007372D3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		51CADC741CD07FB0007372D3 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		51CADC751CD07FB0007372D3 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		51CADC771CD07FB0007372D3 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		54F7C9891CCF2AD100EE0B30 /* DemoKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7C98B1CCF2AD100EE0B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
@@ -129,8 +145,10 @@
 				513CB8C21CCA0EF9009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				513CB8C51CCA0EF9009B4360 /* GoogleSignIn.framework in Frameworks */,
 				513CB8BF1CCA0EF9009B4360 /* Bolts.framework in Frameworks */,
+				51CADC811CD07FB0007372D3 /* libGoogleAnalyticsServices.a in Frameworks */,
 				513CB8C31CCA0EF9009B4360 /* FBSDKShareKit.framework in Frameworks */,
 				513CB8C01CCA0EF9009B4360 /* FBSDKCoreKit.framework in Frameworks */,
+				51CADC7A1CD07FB0007372D3 /* GoogleMobileAds.framework in Frameworks */,
 				513CB8C11CCA0EF9009B4360 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +199,9 @@
 		513CB8A91CCA0EBF009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51CADC6F1CD07FB0007372D3 /* GoogleAdmob */,
+				51CADC711CD07FB0007372D3 /* GoogleAnalytics */,
+				51CADC791CD07FB0007372D3 /* Library */,
 				513CB8B81CCA0EF9009B4360 /* Bolts.framework */,
 				513CB8B91CCA0EF9009B4360 /* FBSDKCoreKit.framework */,
 				513CB8BA1CCA0EF9009B4360 /* FBSDKLoginKit.framework */,
@@ -263,6 +284,35 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		51CADC6F1CD07FB0007372D3 /* GoogleAdmob */ = {
+			isa = PBXGroup;
+			children = (
+				51CADC701CD07FB0007372D3 /* GoogleMobileAds.framework */,
+			);
+			path = GoogleAdmob;
+			sourceTree = "<group>";
+		};
+		51CADC711CD07FB0007372D3 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				51CADC721CD07FB0007372D3 /* GAI.h */,
+				51CADC731CD07FB0007372D3 /* GAIDictionaryBuilder.h */,
+				51CADC741CD07FB0007372D3 /* GAIFields.h */,
+				51CADC751CD07FB0007372D3 /* GAILogger.h */,
+				51CADC761CD07FB0007372D3 /* GAITrackedViewController.h */,
+				51CADC771CD07FB0007372D3 /* GAITracker.h */,
+				51CADC781CD07FB0007372D3 /* libGoogleAnalyticsServices.a */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		51CADC791CD07FB0007372D3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		54F7C98A1CCF2AD100EE0B30 /* DemoKitBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,16 +340,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CADC7B1CD07FB0007372D3 /* GAI.h in Headers */,
 				516C6B6F1CC9CF1000415890 /* KLoginDiaglog.h in Headers */,
 				516C6BB91CC9E4AF00415890 /* UIColor+Uni.h in Headers */,
 				513CB8C81CCA1195009B4360 /* KDemoDelegate.h in Headers */,
+				51CADC7D1CD07FB0007372D3 /* GAIFields.h in Headers */,
 				516C6BBD1CC9E4AF00415890 /* AppCommon.h in Headers */,
 				54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */,
+				51CADC7C1CD07FB0007372D3 /* GAIDictionaryBuilder.h in Headers */,
+				51CADC7E1CD07FB0007372D3 /* GAILogger.h in Headers */,
 				516C6B6A1CC9CEFA00415890 /* KLoginButton.h in Headers */,
 				1C124D291CC8DF74009FAE81 /* DemoKit.h in Headers */,
 				516C6BBB1CC9E4AF00415890 /* UIImage+Uni.h in Headers */,
 				54FBC7281CCDB76300F10304 /* KMiniShopCustomButton.h in Headers */,
 				516C6BB51CC9E4AF00415890 /* KManagerResult.h in Headers */,
+				51CADC7F1CD07FB0007372D3 /* GAITrackedViewController.h in Headers */,
+				51CADC801CD07FB0007372D3 /* GAITracker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +646,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
+					"$(PROJECT_DIR)/Fameworks/GoogleAdmob",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DemoKit/PrefixHeader.pch;
@@ -597,6 +654,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dd5b0e04-7f2b-4adc-8f57-71b7eb7cea92";
@@ -617,6 +678,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks",
+					"$(PROJECT_DIR)/Fameworks/GoogleAdmob",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DemoKit/PrefixHeader.pch;
@@ -624,6 +686,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.appdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "dd5b0e04-7f2b-4adc-8f57-71b7eb7cea92";
