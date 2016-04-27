@@ -20,8 +20,6 @@
 		513CB8D71CCA3209009B4360 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513CB89C1CCA0D60009B4360 /* FBSDKLoginKit.framework */; };
 		51698E101CCF7DB600424976 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E0E1CCF7DB600424976 /* libGoogleAnalyticsServices.a */; };
 		51698E121CCF7DC900424976 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E111CCF7DC900424976 /* CoreData.framework */; };
-		51698E141CCF7DDB00424976 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51698E131CCF7DDB00424976 /* libsqlite3.tbd */; };
-		5169F0211CCF55BE00818155 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0201CCF55BE00818155 /* libz.tbd */; };
 		5169F0281CCF55FB00818155 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5169F0261CCF55FB00818155 /* GoogleSignIn.bundle */; };
 		5169F0291CCF55FB00818155 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5169F0271CCF55FB00818155 /* GoogleSignIn.framework */; };
 		51A9FD881CCDD29000FAF2F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A9FD871CCDD29000FAF2F4 /* StoreKit.framework */; };
@@ -42,6 +40,8 @@
 		51CADC541CD079BB007372D3 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC521CD079A5007372D3 /* DemoKit.framework */; };
 		51CADC571CD07C1C007372D3 /* DemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC521CD079A5007372D3 /* DemoKit.framework */; };
 		51CADC581CD07C1C007372D3 /* DemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC521CD079A5007372D3 /* DemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51CADC851CD09C23007372D3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC841CD09C23007372D3 /* libz.tbd */; };
+		51CADC871CD09C52007372D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC861CD09C52007372D3 /* libsqlite3.tbd */; };
 		54FBC7251CCDB4B700F10304 /* ShowMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -100,8 +100,6 @@
 		51698E0C1CCF7DA600424976 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		51698E0E1CCF7DB600424976 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		51698E111CCF7DC900424976 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		51698E131CCF7DDB00424976 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		5169F0201CCF55BE00818155 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5169F0261CCF55FB00818155 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		5169F0271CCF55FB00818155 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
 		51A9FD871CCDD29000FAF2F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -120,6 +118,8 @@
 		51CADC3C1CD06026007372D3 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		51CADC3E1CD06033007372D3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		51CADC521CD079A5007372D3 /* DemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemoKit.framework; sourceTree = "<group>"; };
+		51CADC841CD09C23007372D3 /* libz.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libz.tbd; sourceTree = "<group>"; };
+		51CADC861CD09C52007372D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libsqlite3.tbd; sourceTree = "<group>"; };
 		54FBC7231CCDB4B700F10304 /* ShowMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7241CCDB4B700F10304 /* ShowMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoKit.xcodeproj; path = ../DemoKit/DemoKit.xcodeproj; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 				51CADC3F1CD06033007372D3 /* MessageUI.framework in Frameworks */,
 				51CADC3D1CD06026007372D3 /* MediaPlayer.framework in Frameworks */,
 				51CADC3A1CD06016007372D3 /* EventKit.framework in Frameworks */,
+				51CADC871CD09C52007372D3 /* libsqlite3.tbd in Frameworks */,
 				51CADC3B1CD06016007372D3 /* EventKitUI.framework in Frameworks */,
 				51CADC371CD0600A007372D3 /* CoreTelephony.framework in Frameworks */,
 				51CADC351CD05E47007372D3 /* CoreMedia.framework in Frameworks */,
@@ -142,10 +143,8 @@
 				51CADC311CD05E2F007372D3 /* AVFoundation.framework in Frameworks */,
 				51CADC2F1CD05E25007372D3 /* AudioToolbox.framework in Frameworks */,
 				51CADC2D1CD05E18007372D3 /* AdSupport.framework in Frameworks */,
-				51698E141CCF7DDB00424976 /* libsqlite3.tbd in Frameworks */,
 				51698E121CCF7DC900424976 /* CoreData.framework in Frameworks */,
 				51CADC2B1CD05DF8007372D3 /* GoogleMobileAds.framework in Frameworks */,
-				5169F0211CCF55BE00818155 /* libz.tbd in Frameworks */,
 				51698E101CCF7DB600424976 /* libGoogleAnalyticsServices.a in Frameworks */,
 				51A9FD8E1CCDD2A400FAF2F4 /* SafariServices.framework in Frameworks */,
 				5169F0291CCF55FB00818155 /* GoogleSignIn.framework in Frameworks */,
@@ -156,6 +155,7 @@
 				513CB89D1CCA0D60009B4360 /* FBSDKCoreKit.framework in Frameworks */,
 				513CB8A61CCA0EB6009B4360 /* FBSDKShareKit.framework in Frameworks */,
 				513CB8A51CCA0EB6009B4360 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				51CADC851CD09C23007372D3 /* libz.tbd in Frameworks */,
 				513CB8A41CCA0EB6009B4360 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,12 +210,12 @@
 		513CB89A1CCA0D47009B4360 /* Fameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51CADC841CD09C23007372D3 /* libz.tbd */,
 				51CADC521CD079A5007372D3 /* DemoKit.framework */,
 				51CADC281CD05DEB007372D3 /* GoogleAdmob */,
 				51698E061CCF7D9000424976 /* GoogleAnalytics */,
 				5169F0261CCF55FB00818155 /* GoogleSignIn.bundle */,
 				5169F0271CCF55FB00818155 /* GoogleSignIn.framework */,
-				5169F0201CCF55BE00818155 /* libz.tbd */,
 				51A9FD8D1CCDD2A400FAF2F4 /* SafariServices.framework */,
 				51A9FD8B1CCDD29E00FAF2F4 /* AddressBook.framework */,
 				51A9FD891CCDD29900FAF2F4 /* SystemConfiguration.framework */,
@@ -232,7 +232,7 @@
 		51698E061CCF7D9000424976 /* GoogleAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				51698E131CCF7DDB00424976 /* libsqlite3.tbd */,
+				51CADC861CD09C52007372D3 /* libsqlite3.tbd */,
 				51698E111CCF7DC900424976 /* CoreData.framework */,
 				51698E0E1CCF7DB600424976 /* libGoogleAnalyticsServices.a */,
 				51698E071CCF7DA600424976 /* GAI.h */,
@@ -500,6 +500,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks/Library",
 					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
+					"$(PROJECT_DIR)/Fameworks",
 				);
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
@@ -529,6 +530,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fameworks/Library",
 					"$(PROJECT_DIR)/Fameworks/GoogleAnalytics",
+					"$(PROJECT_DIR)/Fameworks",
 				);
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
