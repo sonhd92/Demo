@@ -24,7 +24,7 @@
   [super viewDidLoad];
     CGPoint pAdmob=CGPointMake([UIScreen mainScreen].bounds.size.width/2-160, [UIScreen mainScreen].bounds.size.height-50);
     //Google Admob
-    [KDemo showAdAtViewController:self position:pAdmob adUnitID:@"ca-app-pub-3940256099942544/2934735716"];
+//    [KDemo showAdAtViewController:self position:pAdmob adUnitID:@"ca-app-pub-3940256099942544/2934735716"];
 }
 
 #pragma mark LogiNButton Delegate
