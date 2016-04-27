@@ -1,1 +1,2 @@
-dependencies: /Users/SonHD/Desktop/Git/DemoKit/Class/Uni/UIImage+Uni.m
+dependencies: \
+  /Users/nguyenquockhanh/Desktop/khanh/VCCorp/DemoSDK/DemoKit/Class/Uni/UIImage+Uni.m

@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "KManagerResult.h"
+#import "GAITrackedViewController.h"
 
 @protocol KLoginDiaglogDelegate <NSObject>
 - (void) LoginDialogWithResult:(KManagerResult*)result
                          error:(NSError *)error;
 @end
-@interface KLoginDiaglog : UIViewController
+@interface KLoginDiaglog : GAITrackedViewController
 @property (weak, nonatomic) IBOutlet id<KLoginDiaglogDelegate> delegate;
 @end

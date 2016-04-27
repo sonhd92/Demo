@@ -11,4 +11,5 @@
 @interface AppCommon : NSObject
 + (NSString*)getToken;
 + (void)setToken:(id)token;
++ (NSString*)getDeviceID;
 @end

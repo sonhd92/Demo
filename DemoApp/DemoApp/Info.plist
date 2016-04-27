@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>LIZSDKCoreKit</string>
+				<string>vn.sohagame.appdemo</string>
 			</array>
 		</dict>
 		<dict>
@@ -33,20 +33,22 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.871137579127-9iq60cikpgnmhrchooedua9n0l0qou91</string>
+				<string>com.googleusercontent.apps.622697178233-ruv8e9483m52romv6gk0nnr6ahl6jmrj</string>
 			</array>
 		</dict>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1112556342122786</string>
+				<string>fb1776474945916766</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>1112556342122786</string>
+	<string>1776474945916766</string>
 	<key>FacebookDisplayName</key>
 	<string>Game1</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -81,6 +83,8 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>akamaihd.net</key>

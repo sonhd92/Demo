@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.screenName=@"LoginDialog";
     self.btnLoginFacebook.readPermissions =@[@"public_profile", @"email", @"user_friends"];
 }
 - (void)returnResult:(KManagerResult *)result error:(NSError*)err{
