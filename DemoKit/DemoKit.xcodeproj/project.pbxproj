@@ -63,10 +63,12 @@
 		51A433801CCB11FC0032F3D3 /* btn_close_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337E1CCB11FC0032F3D3 /* btn_close_mini.png */; };
 		51A433811CCB11FC0032F3D3 /* btn_close_mini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51A4337F1CCB11FC0032F3D3 /* btn_close_mini@2x.png */; };
 		51CADC421CD0605B007372D3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CADC411CD0605B007372D3 /* GoogleMobileAds.framework */; };
-		51CADC451CD06102007372D3 /* KDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC431CD06102007372D3 /* KDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51CADC451CD06102007372D3 /* KDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC431CD06102007372D3 /* KDemo.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		51CADC461CD06102007372D3 /* KDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CADC441CD06102007372D3 /* KDemo.m */; };
 		51CADC4A1CD061BC007372D3 /* GoogleAdmobManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CADC481CD061BC007372D3 /* GoogleAdmobManager.h */; };
 		51CADC4B1CD061BC007372D3 /* GoogleAdmobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CADC491CD061BC007372D3 /* GoogleAdmobManager.m */; };
+		51E9CF3B1CD202F000A75880 /* GoogleTrackingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E9CF391CD202F000A75880 /* GoogleTrackingManager.h */; };
+		51E9CF3C1CD202F000A75880 /* GoogleTrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E9CF3A1CD202F000A75880 /* GoogleTrackingManager.m */; };
 		54FBC7181CCA13C800F10304 /* KMiniShopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */; };
 		54FBC71A1CCA13C800F10304 /* KMiniShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */; };
@@ -115,7 +117,7 @@
 		516C6B691CC9CEFA00415890 /* KLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLoginButton.m; sourceTree = "<group>"; };
 		516C6B6C1CC9CF1000415890 /* KLoginDiaglog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLoginDiaglog.h; sourceTree = "<group>"; };
 		516C6B6D1CC9CF1000415890 /* KLoginDiaglog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLoginDiaglog.m; sourceTree = "<group>"; };
-		516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLoginDiaglog.xib; sourceTree = "<group>"; };
+		516C6B6E1CC9CF1000415890 /* KLoginDiaglog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KLoginDiaglog.xib; path = ViewControllers/Login/KLoginDiaglog.xib; sourceTree = SOURCE_ROOT; };
 		516C6B7B1CC9D14500415890 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		516C6BA91CC9E4AF00415890 /* KManagerResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KManagerResult.h; sourceTree = "<group>"; };
 		516C6BAA1CC9E4AF00415890 /* KManagerResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KManagerResult.m; sourceTree = "<group>"; };
@@ -133,6 +135,8 @@
 		51CADC441CD06102007372D3 /* KDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDemo.m; sourceTree = "<group>"; };
 		51CADC481CD061BC007372D3 /* GoogleAdmobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAdmobManager.h; sourceTree = "<group>"; };
 		51CADC491CD061BC007372D3 /* GoogleAdmobManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAdmobManager.m; sourceTree = "<group>"; };
+		51E9CF391CD202F000A75880 /* GoogleTrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleTrackingManager.h; sourceTree = "<group>"; };
+		51E9CF3A1CD202F000A75880 /* GoogleTrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleTrackingManager.m; sourceTree = "<group>"; };
 		54FBC7151CCA13C800F10304 /* KMiniShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMiniShopViewController.h; sourceTree = "<group>"; };
 		54FBC7161CCA13C800F10304 /* KMiniShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMiniShopViewController.m; sourceTree = "<group>"; };
 		54FBC7171CCA13C800F10304 /* KMiniShopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMiniShopViewController.xib; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 		516C6B661CC9CD5A00415890 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				51E9CF381CD202E200A75880 /* GoogleTracking */,
 				51CADC471CD06195007372D3 /* GoogleAdMob */,
 				54FBC7141CCA13C800F10304 /* MiniShop */,
 				516C6B671CC9CD8400415890 /* Login */,
@@ -325,6 +330,15 @@
 			path = GoogleAdMob;
 			sourceTree = "<group>";
 		};
+		51E9CF381CD202E200A75880 /* GoogleTracking */ = {
+			isa = PBXGroup;
+			children = (
+				51E9CF391CD202F000A75880 /* GoogleTrackingManager.h */,
+				51E9CF3A1CD202F000A75880 /* GoogleTrackingManager.m */,
+			);
+			path = GoogleTracking;
+			sourceTree = "<group>";
+		};
 		54FBC7141CCA13C800F10304 /* MiniShop */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +368,7 @@
 				51698E1F1CCF7E0300424976 /* GAIDictionaryBuilder.h in Headers */,
 				51698E211CCF7E0300424976 /* GAILogger.h in Headers */,
 				516C6B6A1CC9CEFA00415890 /* KLoginButton.h in Headers */,
+				51E9CF3B1CD202F000A75880 /* GoogleTrackingManager.h in Headers */,
 				1C124D291CC8DF74009FAE81 /* DemoKit.h in Headers */,
 				51CADC451CD06102007372D3 /* KDemo.h in Headers */,
 				516C6BBB1CC9E4AF00415890 /* UIImage+Uni.h in Headers */,
@@ -467,6 +482,7 @@
 				516C6B701CC9CF1000415890 /* KLoginDiaglog.m in Sources */,
 				51CADC461CD06102007372D3 /* KDemo.m in Sources */,
 				513CB8C91CCA1195009B4360 /* KDemoDelegate.m in Sources */,
+				51E9CF3C1CD202F000A75880 /* GoogleTrackingManager.m in Sources */,
 				54FBC7191CCA13C800F10304 /* KMiniShopViewController.m in Sources */,
 				516C6BBE1CC9E4AF00415890 /* AppCommon.m in Sources */,
 			);

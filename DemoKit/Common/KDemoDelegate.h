@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface KDemoDelegate : NSObject
-@property(nonatomic,strong) NSString *googleClientID;
-@property(nonatomic,strong) NSString *googleTrackingID;
-
-
 + (instancetype)sharedInstance;
 
 - (BOOL)application:(UIApplication *)application
@@ -27,7 +23,4 @@
                    application:(UIApplication *)application;
 
 + (void)setDeviceToken:(NSString *)deviceToken;
-
-
-
 @end

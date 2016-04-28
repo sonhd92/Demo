@@ -11,6 +11,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 #import "GAI.h"
+#import "GAIDictionaryBuilder.h"
 @implementation KDemoDelegate
 
 #define KEY_DEVICE_TOKEN @"deviceToken"
@@ -32,7 +33,6 @@ static NSString *token = @"";
                            didFinishLaunchingWithOptions:launchOptions];
   return YES;
 }
-
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
@@ -49,7 +49,6 @@ static NSString *token = @"";
                                           annotation:annotation];
     }
 }
-
 + (void)handlePushNotification:(NSDictionary *)notificationDictionary
                    application:(UIApplication *)application {
     [UIApplication sharedApplication].applicationIconBadgeNumber = 1;
@@ -63,19 +62,4 @@ static NSString *token = @"";
   [userDefault setObject:deviceToken forKey:KEY_DEVICE_TOKEN];
   [userDefault synchronize];
 }
-
--(void)setGoogleClientID:(NSString *)googleClientID{
-    [GIDSignIn sharedInstance].clientID=googleClientID;
-    _googleClientID=googleClientID;
-}
--(void)setGoogleTrackingID:(NSString *)googleTrackingID{
-    if (googleTrackingID) {
-        [GAI sharedInstance].trackUncaughtExceptions = YES;
-        [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
-        [GAI sharedInstance].dispatchInterval = 20;
-        id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:googleTrackingID];
-    }
-    _googleTrackingID=googleTrackingID;
-}
-
 @end

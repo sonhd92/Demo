@@ -9,8 +9,12 @@
 #import "KLoginDiaglog.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import <GoogleSignIn/GoogleSignIn.h>
 @interface KLoginDiaglog ()<FBSDKLoginButtonDelegate>
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *btnLoginFacebook;
+@property (weak, nonatomic) IBOutlet GIDSignInButton *btnGoogleLogin;
 
 @end
 
@@ -19,6 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.screenName=@"LoginDialog";
+    _btnGoogleLogin.delegate=self;
+    GIDSignIn* g=[GIDSignIn sharedInstance];
+    [[GIDSignIn sharedInstance] signInSilently];
     self.btnLoginFacebook.readPermissions =@[@"public_profile", @"email", @"user_friends"];
 }
 - (void)returnResult:(KManagerResult *)result error:(NSError*)err{

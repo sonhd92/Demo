@@ -21,10 +21,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[KDemoDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [KDemo application:application didFinishLaunchingWithOptions:launchOptions];
 //    [GIDSignIn sharedInstance].clientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
-    [KDemoDelegate sharedInstance].googleClientID = @"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com";
-    [KDemoDelegate sharedInstance].googleTrackingID=@"UA-76944589-1";
+    [KDemo googleClientID:@"871137579127-9iq60cikpgnmhrchooedua9n0l0qou91.apps.googleusercontent.com"];
+    [KDemo googleTrackingID:@"UA-76944589-1"];
+    GIDSignIn* g=[GIDSignIn sharedInstance];
     
     NSString *currentVersion = [[UIDevice currentDevice] systemVersion];
     if ([currentVersion compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending)
@@ -45,10 +47,10 @@
     return YES;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-         return [[KDemoDelegate sharedInstance] application:application
-                                                    openURL:url
-                                          sourceApplication:sourceApplication
-                                                 annotation:annotation];
+    return [KDemo application:application
+                      openURL:url
+            sourceApplication:sourceApplication
+                   annotation:annotation];
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{

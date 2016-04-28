@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KLoginDiaglog">
             <connections>
+                <outlet property="btnGoogleLogin" destination="Haf-cr-7dc" id="J2H-CB-Ro8"/>
                 <outlet property="btnLoginFacebook" destination="MZj-A3-69U" id="3eG-tA-Tud"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

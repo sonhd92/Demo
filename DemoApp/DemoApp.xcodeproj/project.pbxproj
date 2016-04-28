@@ -49,7 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		51CADC501CD07957007372D3 /* PBXContainerItemProxy */ = {
+		51E9CF361CD1CF3F00A75880 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54FBC72E1CCDCC2300F10304 /* DemoKit.xcodeproj */;
 			proxyType = 1;
@@ -334,7 +334,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				51CADC511CD07957007372D3 /* PBXTargetDependency */,
+				51E9CF371CD1CF3F00A75880 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -419,10 +419,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		51CADC511CD07957007372D3 /* PBXTargetDependency */ = {
+		51E9CF371CD1CF3F00A75880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Aggregate;
-			targetProxy = 51CADC501CD07957007372D3 /* PBXContainerItemProxy */;
+			targetProxy = 51E9CF361CD1CF3F00A75880 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,7 +554,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.ABCD;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.SBC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 			};
@@ -584,7 +584,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.ABCD;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.sohagame.SBC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bd88520f-c980-4923-8a07-569778fdcebb";
 			};
