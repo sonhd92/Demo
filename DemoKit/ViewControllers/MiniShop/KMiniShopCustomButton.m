@@ -11,9 +11,8 @@
 
 @implementation KMiniShopCustomButton
 
-
 - (void)showMiniShop {
-    KMiniShopViewController *vc = [[KMiniShopViewController alloc] init];
+  KMiniShopViewController *vc = [[KMiniShopViewController alloc] init];
   NSBundle *frameworkBundle = [NSBundle bundleForClass:[self class]];
   vc = [[KMiniShopViewController alloc]
       initWithNibName:@"KMiniShopViewController"
